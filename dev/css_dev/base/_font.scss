@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/* ========================================================== */
+/*                                                            */
+/* file     : font                                            */
+// writer   : Ryu
+// date     : 20190901
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* Noto Sans KR s =========================================== */
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean'); */
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('fonts/NotoSansKR-Thin.woff2') format('woff2'),
+  url('fonts/NotoSansKR-Thin.woff') format('woff'),
+  url('fonts/NotoSansKR-Thin.otf') format('opentype');
+  font-weight: $th;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('fonts/NotoSansKR-Light.woff2') format('woff2'),
+  url('fonts/NotoSansKR-Light.woff') format('woff'),
+  url('fonts/NotoSansKR-Light.otf') format('opentype');
+  font-weight: $l;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('fonts/NotoSansKR-Regular.woff2') format('woff2'),
+  url('fonts/NotoSansKR-Regular.woff') format('woff'),
+  url('fonts/NotoSansKR-Regular.otf') format('opentype');
+  font-weight: $r;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('fonts/NotoSansKR-Medium.woff2') format('woff2'),
+  url('fonts/NotoSansKR-Medium.woff') format('woff'),
+  url('fonts/NotoSansKR-Medium.otf') format('opentype');
+  font-weight: $md;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('fonts/NotoSansKR-Bold.woff2') format('woff2'),
+  url('fonts/NotoSansKR-Bold.woff') format('woff'),
+  url('fonts/NotoSansKR-Bold.otf') format('opentype');
+  font-weight: $b;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('fonts/NotoSansKR-Black.woff2') format('woff2'),
+  url('fonts/NotoSansKR-Black.woff') format('woff'),
+  url('fonts/NotoSansKR-Black.otf') format('opentype');
+  font-weight: $bk;
+  font-style: normal;
+}
+
+//@font-face {
+//  font-family: 'Noto Sans KR';
+//  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+//  font-weight: $th;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Noto Sans KR';
+//  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+//  font-weight: $l;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Noto Sans KR';
+//  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+//  font-weight: $r;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Noto Sans KR';
+//  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+//  font-weight: $md;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Noto Sans KR';
+//  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+//  font-weight: $b;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Noto Sans KR';
+//  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),
+//  url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+//  font-weight: $bk;
+//  font-style: normal;
+//}
+
+/* font : Noto Sans KR e ==================================== */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* font : Noto Serif KR s =================================== */
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('fonts/NotoSerifCJKkr-ExtraLight.woff') format('woff');
+  font-weight: $th;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('fonts/NotoSerifCJKkr-Light.woff') format('woff');
+  font-weight: $l;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('fonts/NotoSerifCJKkr-Medium.woff') format('woff');
+  font-weight: $md;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('fonts/NotoSerifCJKkr-Regular.woff') format('woff');
+  font-weight: $r;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('fonts/NotoSerifCJKkr-SemiBold.woff') format('woff');
+  font-weight: $sb;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('fonts/NotoSerifCJKkr-Bold.woff') format('woff');
+  font-weight: $b;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('fonts/NotoSerifCJKkr-Black.woff') format('woff');
+  font-weight: $bk;
+  font-style: normal;
+}
+/* font : Noto Serif KR e =================================== */
+/* ---------------------------------------------------------- */
+///* -------------------------------------------------------- */
+///* font : Noto Serif s ==================================== */
+///* @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap'); */
+///* font : Noto Serif e ==================================== */
+///* -------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* font : Nanum Gothic s ==================================== */
+///* @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean'); */
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('fonts/NanumGothicLight.eot');
+  src: url('fonts/NanumGothicLight.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NanumGothicLight.woff2') format('woff2'),
+  url('fonts/NanumGothicLight.woff') format('woff'),
+  url('fonts/NanumGothicLight.ttf') format('truetype');
+  font-weight: $l;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('fonts/NanumGothic.eot');
+  src: url('fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NanumGothic.woff2') format('woff2'),
+  url('fonts/NanumGothic.woff') format('woff'),
+  url('fonts/NanumGothic.ttf') format('truetype');
+  font-weight: $r;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('fonts/NanumGothicBold.eot');
+  src: url('fonts/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NanumGothicBold.woff2') format('woff2'),
+  url('fonts/NanumGothicBold.woff') format('woff'),
+  url('fonts/NanumGothicBold.ttf') format('truetype');
+  font-weight: $b;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('fonts/NanumGothicExtraBold.eot');
+  src: url('fonts/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/NanumGothicExtraBold.woff2') format('woff2'),
+  url('fonts/NanumGothicExtraBold.woff') format('woff'),
+  url('fonts/NanumGothicExtraBold.ttf') format('truetype');
+  font-weight: $eb;
+  font-style: normal;
+}
+/* font : Nanum Gothic e ==================================== */
+/* ---------------------------------------------------------- */
+///* -------------------------------------------------------- */
+///* font : Nanum Myeongjo s ================================ */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap');
+///* font : Nanum Myeongjo e ================================ */
+///* -------------------------------------------------------- */
+///* -------------------------------------------------------- */
+///* font : Roboto s ======================================== */
+///* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap'); */
+//@font-face {
+//  font-family: 'Roboto';
+//  src: url('fonts/Roboto-Thin.eot');
+//  src: url('fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/Roboto-Thin.svg#Roboto-Thin') format('svg'),
+//  url('fonts/Roboto-Thin.ttf') format('truetype'),
+//  url('fonts/Roboto-Thin.woff') format('woff'),
+//  url('fonts/Roboto-Thin.woff2') format('woff2');
+//  font-weight: $l;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Roboto';
+//  src: url('fonts/Roboto-Regular.eot');
+//  src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+//  url('fonts/Roboto-Regular.ttf') format('truetype'),
+//  url('fonts/Roboto-Regular.woff') format('woff'),
+//  url('fonts/Roboto-Regular.woff2') format('woff2');
+//  font-weight: $r;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Roboto';
+//  src: url('fonts/Roboto-Bold.eot');
+//  src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/Roboto-Bold.svg#Roboto-Bold') format('svg'),
+//  url('fonts/Roboto-Bold.ttf') format('truetype'),
+//  url('fonts/Roboto-Bold.woff') format('woff'),
+//  url('fonts/Roboto-Bold.woff2') format('woff2');
+//  font-weight: $b;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Roboto';
+//  src: url('fonts/Roboto-Black.eot');
+//  src: url('fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/Roboto-Black.svg#Roboto-Black') format('svg'),
+//  url('fonts/Roboto-Black.ttf') format('truetype'),
+//  url('fonts/Roboto-Black.woff') format('woff'),
+//  url('fonts/Roboto-Black.woff2') format('woff2');
+//  font-weight: $bk;
+//  font-style: normal;
+//}
+///* font : Roboto e ======================================== */
+///* -------------------------------------------------------- */
+///* -------------------------------------------------------- */
+///* font : Apple SD Gothic Neo s =========================== */
+//@font-face {
+//  font-family: 'Apple SD Gothic Neo';
+//  src: url('fonts/AppleSDGothicNeoL.eot');
+//  src: url('fonts/AppleSDGothicNeoL.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/AppleSDGothicNeoL.woff2') format('woff2'),
+//  url('fonts/AppleSDGothicNeoL.woff') format('woff'),
+//  url('fonts/AppleSDGothicNeoL.ttf') format('truetype');
+//  font-weight: $l;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Apple SD Gothic Neo';
+//  src: url('fonts/AppleSDGothicNeoR.eot');
+//  src: url('fonts/AppleSDGothicNeoR.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/AppleSDGothicNeoR.woff2') format('woff2'),
+//  url('fonts/AppleSDGothicNeoR.woff') format('woff'),
+//  url('fonts/AppleSDGothicNeoR.ttf') format('truetype');
+//  font-weight: $r;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Apple SD Gothic Neo';
+//  src: url('fonts/AppleSDGothicNeoSB.eot');
+//  src: url('fonts/AppleSDGothicNeoSB.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/AppleSDGothicNeoSB.woff2') format('woff2'),
+//  url('fonts/AppleSDGothicNeoSB.woff') format('woff'),
+//  url('fonts/AppleSDGothicNeoSB.ttf') format('truetype');
+//  font-weight: $sb;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Apple SD Gothic Neo';
+//  src: url('fonts/AppleSDGothicNeoB.eot');
+//  src: url('fonts/AppleSDGothicNeoB.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/AppleSDGothicNeoB.woff2') format('woff2'),
+//  url('fonts/AppleSDGothicNeoB.woff') format('woff'),
+//  url('fonts/AppleSDGothicNeoB.ttf') format('truetype');
+//  font-weight: $b;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: 'Apple SD Gothic Neo';
+//  src: url('fonts/AppleSDGothicNeoEB.eot');
+//  src: url('fonts/AppleSDGothicNeoEB.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/AppleSDGothicNeoEB.woff2') format('woff2'),
+//  url('fonts/AppleSDGothicNeoEB.woff') format('woff'),
+//  url('fonts/AppleSDGothicNeoEB.ttf') format('truetype');
+//  font-weight: $eb;
+//  font-style: normal;
+//}
+///* font : Apple SD Gothic Neo e =========================== */
+/* NanumSquareRound s ======================================= */
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 300;
+  src: local("fonts/NanumSquareRoundL"); /* computer */
+  src: url("fonts/NanumSquareRoundL.eot"); /* IE9 Compat Modes */
+  src: /* url("fonts/NanumSquareRoundL.eot?#iefix") format("embedded-opentype"),*/ /* IE6-IE8 */
+          url("fonts/NanumSquareRoundL.woff2") format("woff2"), /* Modern Browsers */
+          url("fonts/NanumSquareRoundL.woff") format("woff"), /* Modern Browsers */
+          url("fonts/NanumSquareRoundL.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 400;
+  src: local("fonts/NanumSquareRoundR"); /* computer */
+  src: url("fonts/NanumSquareRoundR.eot"); /* IE9 Compat Modes */
+  src: /* url("fonts/NanumSquareRoundR.eot?#iefix") format("embedded-opentype"),*/ /* IE6-IE8 */
+          url("fonts/NanumSquareRoundR.woff2") format("woff2"), /* Modern Browsers */
+          url("fonts/NanumSquareRoundR.woff") format("woff"), /* Modern Browsers */
+          url("fonts/NanumSquareRoundR.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 700;
+  src: local("fonts/NanumSquareRoundB"); /* computer */
+  src: url("fonts/NanumSquareRoundB.eot"); /* IE9 Compat Modes */
+  src: /* url("fonts/NanumSquareRoundB.eot?#iefix") format("embedded-opentype"),*/ /* IE6-IE8 */
+          url("fonts/NanumSquareRoundB.woff2") format("woff2"), /* Modern Browsers */
+          url("fonts/NanumSquareRoundB.woff") format("woff"), /* Modern Browsers */
+          url("fonts/NanumSquareRoundB.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 800;
+  src: local("fonts/NanumSquareRoundEB"); /* computer */
+  src: url("fonts/NanumSquareRoundEB.eot"); /* IE9 Compat Modes */
+  src: /* url("fonts/NanumSquareRoundEB.eot?#iefix") format("embedded-opentype"),*/ /* IE6-IE8 */
+          url("fonts/NanumSquareRoundEB.woff2") format("woff2"), /* Modern Browsers */
+          url("fonts/NanumSquareRoundEB.woff") format("woff"), /* Modern Browsers */
+          url("fonts/NanumSquareRoundEB.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+/* NanumSquareRound s ======================================= */

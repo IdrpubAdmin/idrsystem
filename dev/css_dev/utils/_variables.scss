@@ -1,0 +1,122 @@
+@charset "utf-8";
+// ======================================================================== //
+// file		: variables
+// writer	: Ryu
+// date		: 20180525
+// ======================================================================== //
+
+// font==================================================================== //
+$default_font: 'Apple SD Gothic Neo';
+//$default_font: 'Noto Sans KR', sans-serif;
+//$default_font: 'Noto Serif KR', serif;
+//$default_font: 'Noto Serif', sans-serif;
+//$default_font: 'Nanum Gothic', sans-serif;
+//$default_font: 'Nanum Myeongjo', serif;
+//$default_font: 'Roboto', sans-serif;
+//$default_font: 'Apple SD Gothic Neo', sans-serif;
+//$default_font: 'Malgun Gothic', sans-serif;
+$second_font: 'Open Sans';
+$th: 100;
+$l: 300;
+$r: 400;
+$md: 500;
+$sb: 600;
+$b: 700;
+$eb: 800;
+$bk: 900;
+$default_fc:#222;
+$gray_fc:#666;
+$gray_fc2:#888;
+$light_gray_fc:#aaa;
+
+//color
+$white: #fff;
+$black: #222;
+$light_gray: #999;
+$light_black: #999;
+$white_gray: #f1f1f1;
+$white_gray2:#e1e1e1;
+$camel: #c69c6d;
+$gray: #666;
+$red: #f00;
+$point_clr:#e46764;
+$border_clr:#f1f1f1;
+$border_clr2:#ccc;
+$border_clr3:#e5e5e5;
+$border_clr4:#e1e1e1;
+
+//btn
+$df_h_s:35px;
+$df_h_m:40px;
+$df_h_l:50px;
+
+//layout
+$con_mg: 10px;
+$con_pd: 15px;
+$con_pd2: 20px;
+$con_pd3: 25px;
+$con_pd_s: 30px;
+$con_pd_s2: 35px;
+$con_pd6_m: 40px;
+$con_pd7_m2: 45px;
+$con_pd8_l: 50px;
+
+//media queries
+$full: 1920px;
+$middle: 1600px;
+$narrow: 1280px;
+$minw: 375px;
+
+//url
+$img_url:'../../images/';
+$img_common_url:'common_sub/';
+$img_order_url:'order/';
+$img_pg_url:'pg/';
+$img_cs_url:'cs/';
+$img_mbr_url:'member/';
+$img_mp_url:'mypage/';
+
+//motion
+$slide_time:300;
+//card
+$card-color: (
+	'bc':#e83d44,
+	'hana':#008598,
+	'hyundai':#566582,
+	'kb':#776c61,
+	'lotte':#5c49d9,
+	'nh':#37b978,
+	'samsung':#188cd6,
+	'shinhan':#91acc4
+);
+$card-fontcolor: (
+	'bc':#fff,
+	'hana':#fff,
+	'hyundai':#fff,
+	'kb':#fff,
+	'lotte':#fff,
+	'nh':#fff,
+	'samsung':#fff,
+	'shinhan':#fff
+);
+
+//notification
+$n-kind-name: (
+	'athome',
+	'coupon',
+	'delivery',
+	'event',
+	'expire',
+	'fitting',
+	'gift',
+	'member',
+	'new',
+	'order',
+	'pickup',
+	'plus',
+	'qna',
+	'repair',
+	'repair_2',
+	'return',
+	'sale'
+);

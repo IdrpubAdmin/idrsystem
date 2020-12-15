@@ -1,0 +1,6 @@
+/dev/node_modules/
+/dev/css_dev/package-lock.json
+/.git/
+/.idea/
+/.vscode/
+*.bak

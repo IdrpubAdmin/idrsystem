@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* ========================================================== */
+/*                                                            */
+/* file		: tab                                      	      */
+// writer	: Ryu
+// date		: 20190901
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* tab s ==================================================== */
+/*gray_bg_tab*/
+.hs_gray_bg_tab{
+  font-size:0;
+  background:#f1f1f1;
+  @for $tab_size from 1 through 6{
+    &.size0#{$tab_size} li{width:100% / $tab_size;}
+  }
+  li{
+    position:relative;
+    display:inline-block;
+    &:before{
+      content:'';
+      display:inline-block;
+      clear:both;
+      @include posa_tl(50%, 0);
+      width:1px; 
+      height:12px;
+      margin-top:-6px;
+      background:#cecece;
+    }
+    &:first-child:before{
+      display:none;
+    }
+    a{
+      display:block;
+      padding:14px 0 13px;
+      font-size:14px;
+      color:#888;
+      text-align:center;
+    }
+    &.on a{
+      font-weight:bold;
+      color:#222;
+    }
+  }
+}
+
+/*red_border_tab*/
+.hs_red_border_tab{
+  position:relative; 
+  font-size:0;
+  background:#fff;
+  @for $tab_size from 1 through 6{
+    &.size0#{$tab_size} li,
+    .fcs {width:100% / $tab_size;}
+  }
+  li{
+    display:inline-block;
+  }
+  li a{
+    display:block; 
+    padding:14px 0 15px; 
+    font-size:14px; 
+    font-weight:bold; 
+    color:#aaa; 
+    text-align:center;
+    line-height:1; 
+    border-bottom:2px solid #f3f3f3;
+    .s_txt{
+      display:inline-block;
+      margin-left:5px;
+      font-size:12px;
+    }
+  }
+  li.on a{
+    color:#222; 
+    border-color:#e46764;
+  }
+  &.ui_tab {
+    li.on {
+      a {
+        border-color: transparent;  
+      }
+      &:first-child {
+        a {
+          border-color:#e46764;   
+        }
+      }
+    }
+    &.active {
+      li.on {
+        &:first-child {
+          a {
+            border-color:transparent;
+          }
+        }
+      }
+    }
+    .fcs {
+      // width: calc(100% / 3);
+      @include posa_bl;
+      height: 2px;
+      background-color: $camel;
+      @include transform(translateX(0));
+      @include transition(all .4s ease-in-out);
+    }
+  }
+}
+/* tab e ==================================================== */
+/* ---------------------------------------------------------- */

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* ========================================================== */
+/*                                                            */
+/* file		: simple                                       	  */
+// writer	: Ryu
+// date		: 20190901
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* simple s ================================================= */
+
+/* position */
+.pstS {position:static !important;}
+.pstR {position:relative !important;}
+.pstA {position:absolute !important;}
+.pstF {position:fixed !important;}
+
+/* float */
+.fL {float:left !important;}
+.fR {float:right !important;}
+.fN {float:none !important;}
+.cB {clear:both !important;}
+
+/* display */
+.dN {display:none !important;}
+.dB {display:block !important;}
+.dIB {display:inline-block !important;}
+.dI {display:inline !important;}
+
+/* margin */
+@for $step_size from 0 through 100 {
+	@if $step_size == 0 {
+		.mt#{$step_size} {margin-top: #{$step_size} !important;}
+		.mr#{$step_size} {margin-right: #{$step_size} !important;}
+		.mb#{$step_size} {margin-bottom: #{$step_size} !important;}
+		.ml#{$step_size} {margin-left: #{$step_size} !important;}
+	}
+	@else {
+		.mt#{$step_size} {margin-top: #{$step_size}px !important;}
+		.mr#{$step_size} {margin-right: #{$step_size}px !important;}
+		.mb#{$step_size} {margin-bottom: #{$step_size}px !important;}
+		.ml#{$step_size} {margin-left: #{$step_size}px !important;}
+	}
+}
+
+/* padding */
+@for $step_size from 0 through 100 {
+	@if $step_size == 0 {
+		.pt#{$step_size} {padding-top:#{$step_size} !important;}
+		.pr#{$step_size} {padding-right:#{$step_size} !important;}
+		.pb#{$step_size} {padding-bottom:#{$step_size} !important;}
+		.pl#{$step_size} {padding-left:#{$step_size} !important;}
+	}@else {
+		.pt#{$step_size} {padding-top:#{$step_size}px !important;}
+		.pr#{$step_size} {padding-right:#{$step_size}px !important;}
+		.pb#{$step_size} {padding-bottom:#{$step_size}px !important;}
+		.pl#{$step_size} {padding-left:#{$step_size}px !important;}
+	}
+}
+@for $step_size from 0 through 100 {
+
+}
+
+/* border */
+.testBorer {border:1px solid red !important;}
+.bd0 {border:0 !important;}
+.bd1s333 {border:1px solid #333 !important;}
+.bd1s666 {border:1px solid #666 !important;}
+.bd1s999 {border:1px solid #999 !important;}
+.bd1sAAA {border:1px solid #aaa !important;}
+.bd1sBBB {border:1px solid #bbb !important;}
+.bd1sCCC {border:1px solid #ccc !important;}
+.bd1sDDD {border:1px solid #ddd !important;}
+.bd1sEEE {border:1px solid #eee !important;}
+.bd1sFFF {border:1px solid #fff !important;}
+
+/* font-weight */
+.fwTH {font-weight:$th !important;}
+.fwL {font-weight:$l !important;}
+.fwR {font-weight:$r !important;}
+.fwMD {font-weight:$md !important;}
+.fwSB {font-weight:$sb !important;}
+.fwB {font-weight:$b !important;}
+.fwEB {font-weight:$eb !important;}
+.fwBK {font-weight:$bk !important;}
+
+/* font | em, rem */
+$dotdiv:'.';
+@for $step_size from 0 through 5 {
+	@for $step_size2 from 1 through 9 {
+		.fs#{$step_size}#{$step_size2}e {font-size:#{$step_size}#{$dotdiv}#{$step_size2}em !important;}
+		.fs#{$step_size}#{$step_size2}r {font-size:#{$step_size}#{$dotdiv}#{$step_size2}rem !important;}
+	}
+}
+
+/* font | px */
+@for $step_size from 5 through 50 {
+	.fs#{$step_size}x {font-size:#{$step_size}px !important;}
+}
+
+/* color */
+.clr33 {color:#333 !important;}
+.clr66 {color:#666 !important;}
+.clr99 {color:#999 !important;}
+.clrAA {color:#aaa !important;}
+.clrBB {color:#bbb !important;}
+.clrCC {color:#ccc !important;}
+.clrDD {color:#ddd !important;}
+.clrEE {color:#eee !important;}
+.clrFF {color:#fff !important;}
+.clr7B {color:#7b7b7b !important;}
+
+/* text-align */
+.taL {text-align:left !important;}
+.taC {text-align:center !important;}
+.taR {text-align:right !important;}
+
+/* vertical-align */
+.va_t {vertical-align: top !important;}
+.va_m {vertical-align: middle !important;}
+.bdn {border: none !important;}
+
+/* cursor */
+.crsrC {cursor:crosshair !important;}
+.crsrP {cursor:pointer !important;}
+.crsrM {cursor:move !important;}
+.crsrW {cursor:wait !important;}
+.crsrD {cursor:default !important;}
+.crsrT {cursor:text !important;}
+
+/* overflow */
+.ofV {overflow:visible !important;}
+.ofH {overflow:hidden !important;}
+.ofS {overflow:scroll !important;}
+.ofA {overflow:auto !important;}
+.tofC {text-overflow:clip !important;}
+.tofE {text-overflow:ellipsis !important;}
+
+/* simple e ================================================= */
+/* ---------------------------------------------------------- */

@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import
+	'utils/variables.scss',
+	'utils/css3-mixins.scss',
+	'utils/mixin.scss';
+
+@import
+	'display/button.scss',
+	'display/scrollbar.scss',
+	'display/layer_popup.scss',
+	'display/thumbnail.scss',
+	'display/filter.scss',
+	'display/form.scss',
+	'display/tab.scss',
+	'display/table.scss',
+	'display/list.scss',
+	'display/content.scss';
+
+@import
+	'pages/main.scss',
+	'pages/mypage.scss',
+	'pages/etc.scss';
