@@ -28,18 +28,18 @@ html,body {
 body {
 	-webkit-font-smoothing: antialiased;
 	font: {
-	      family:'Malgun gothic','Apple Gothic', Dotum ,Gulim, Helvetica, sans-serif;
+	      family:'NanumSquareRound', 'Roboto', 'Malgun gothic','Apple Gothic', Dotum ,Gulim, Helvetica, sans-serif;
 	      //size: 14px;
 	      weight: normal;
 	   }
-	color: $black;
+	color: $default_fc;
 	&.hidden {
 		overflow: hidden;
 	}
 }
 a {
 	text-decoration:none;
-	color: $black;
+	color: $default_fc;
 }
 address,
 em {
@@ -101,7 +101,7 @@ button {
 }
 textarea {
 	resize:none;
-	border:1px solid #bfbfbf;
+	border:1px solid $border_clr;
 }
 a,
 img,
@@ -137,6 +137,9 @@ h6 {
 	margin: 0;
 	font-weight: normal;
 	//line-height: 100%;
+}
+img {
+	width:100%;
 }
 /* base e =================================================== */
 /* ---------------------------------------------------------- */

@@ -132,7 +132,24 @@
 		@content;
 	}
 }
-
+@mixin mdq_m {
+	@media (max-width:#{$mobile }){
+		@content;
+	}
+}
+@mixin mdq_custom {
+	@media (max-width:#{$max_w + 240 }){
+		@content;
+	}
+}
+@mixin fnt_set($w:400,$s:1.2em,$lh:unset,$ls:unset) {
+	font: {
+		weight:$w;
+		size:$s;
+	}
+	line-height:$lh;
+	letter-spacing:$ls;
+}
 @mixin t_idt() {
   text-indent:-5000px;
   font-size:0;

@@ -8,6 +8,210 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* main s =================================================== */
+.con_main {
 
+}
+.sec_tit {
+  margin-bottom:28px;
+  font: {
+    weight:$b;
+    size:1.4em;
+  }
+  line-height:20px;
+  letter-spacing:-1.05px;
+  text-align:center;
+  color:#535353;
+}
+.biz_box {
+  position:relative;
+  margin-bottom:116px;
+  .sec_tit {
+    @include posa_tl(190px,30px);
+  }
+  .biz_item {
+    .visual_img {
+      display:inline-block;
+      max-width:705px;
+    }
+    .sub_tit {
+      @include fnt_set($l, 4.1em, 54px);
+    }
+  }
+  .biz_item_01 {
+    text-align:right;
+    .visual_img {
+      margin-bottom:58px;
+    }
+    .sub_tit {
+      margin-bottom:65px;
+    }
+    .desc_box {
+      margin-bottom:65px;
+      p {
+        display:inline-block;
+        max-width:500px;
+        margin-left: 56px;
+        text-align:left;
+      }
+    }
+  }
+  .swiper-container {
+    width: 100%;
+  }
+  div.swiper-pagination {
+    bottom:465px;
+  }
+  span.swiper-pagination-bullet {
+    position:relative;
+    width:100%;
+    height:46px;
+    text-align:left;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background:none;
+    &:before {
+      @include posa_tl(50%,0);
+      margin-top:-4px;
+      content:'';
+      width:0;
+      height:8px;
+      background:$point_clr;
+      opacity:0.8;
+      z-index:-1;
+      border-radius:4px;
+      transition:width 0.3s;
+    }
+    &:after {
+      display:inline-block;
+      padding-left:20px;
+      height:40px;
+      font-weight:$l;
+      font-size:37px;
+      line-height:50px;
+      letter-spacing:0.67px;
+      color:#000;
+      transition:all 0.3s;
+    }
+    &:nth-child(1) {
+      &:after {
+        content: "e-Commerce";
+      }
+    }
+    &:nth-child(2) {
+      &:after {
+        content: "AI Marketing Curator";
+      }
+    }
+    &:nth-child(3) {
+      &:after {
+        content: "UI/UX Design";
+      }
+    }
+    &.swiper-pagination-bullet-active {
+      &:after {
+        font-weight:$r;
+        font-size:41px;
+        line-height:50px;
+        letter-spacing:0.67px;
+        color:#000;
+      }
+      &:nth-child(1) {
+        &:before {
+          width:370px;
+        }
+        &:after {
+          content: "01. e-Commerce";
+        }
+      }
+      &:nth-child(2) {
+        &:before {
+          width:520px;
+        }
+        &:after {
+          content: "02. AI Marketing Curator";
+        }
+      }
+      &:nth-child(3) {
+        &:before {
+          width:370px;
+        }
+        &:after {
+          content: "03. UI/UX Design";
+        }
+      }
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+  }
+}
+
+.portfolio_box {
+  ul {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    > li {
+      width:33.33%;
+      a {
+        .ptfl_item {
+          position: relative;
+          width: 100%;
+          .ptfl_info {
+            display:flex;
+            @include posa_tl();
+            padding:42px 32px;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.5);
+            align-content:flex-end;
+            flex-wrap:wrap;
+            opacity:0;
+            transition:opacity 0.6s;
+            p[class*="tit"] {
+              display:block;
+              width:100%;
+              color:#fff;
+            }
+            .tit_sub {
+              font-weight:$l;
+              font-size:2.5em;
+              letter-spacing:-1.88px;
+              line-height:30px;
+            }
+            .tit {
+              margin-top:12px;
+              font-weight:$l;
+              font-size:3.1em;
+              letter-spacing:-2.33px;
+              line-height:36px;
+            }
+            .tit_desc {
+              margin-top:16px;
+              font-weight:$b;
+              font-size:1.4em;
+              letter-spacing:-1.05px;
+              line-height:18px;
+            }
+          }
+        }
+      }
+      &.on,
+      &:hover {
+        a {
+          .ptfl_info {
+
+            opacity:1;
+          }
+        }
+      }
+    }
+  }
+}
 /* main e =================================================== */
 /* ---------------------------------------------------------- */

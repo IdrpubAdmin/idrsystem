@@ -8,6 +8,49 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* footer s ================================================= */
-
+.main_footer {
+  margin-top:80px;
+  .ft_num_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ft_num {
+    width:32%;
+    .num_tit {
+      padding-left:20px;
+      width:100%;
+      border-bottom:1px solid #000;
+    }
+    img {
+      width:auto;
+      height:85px;
+    }
+    .dot_ul {
+      padding:21px 0 28px 40px;
+      font-size:1.9em;
+      line-height:25px;
+      letter-spacing:-1.43px;
+    }
+    .sep_ul {
+      padding-top:20px;
+    }
+    .txt_ul {
+      padding-top:20px;
+    }
+  }
+  .copyright {
+    padding-top:32px;
+    padding-bottom:30px;
+    p {
+      font: {
+        weight:#{$l};
+        size: 1.5em;
+      }
+      letter-spacing:0.45px;
+    }
+    text-align:center;
+    border-top:3px solid #000;
+  }
+}
 /* footer e ================================================= */
 /* ---------------------------------------------------------- */

@@ -8,6 +8,60 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* nav s ==================================================== */
-
+.gnb_wrap {
+  display:none;
+  @include posf();
+  width:100%;
+  height:100vh;
+  background:rgba(0,0,0,0.86);
+  z-index:5;
+  &.on {
+    display:block;
+  }
+}
+.gnb_menu {
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap:wrap;
+  width:100%;
+  height:100%;
+  @include mdq_m {
+    flex-direction:column;
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+  a {
+    position:relative;
+    display:inline-block;
+    span {
+      color:#fff;
+      font: {
+        family: "KeepCalmM";
+        size:68px;
+      }
+      letter-spacing:2.04px;
+      @include mdq_m {
+        font-size:48px;
+      }
+    }
+  }
+  .on {
+    a {
+      &:before {
+        @include posa_tl(50%,-8%);
+        margin-top:6px;
+        content:'';
+        width:116%;
+        height:8px;
+        background:$point_clr;
+        opacity:0.8;
+        z-index:-1;
+        border-radius:4px;
+        transition:width 0.3s;
+      }
+    }
+  }
+}
 /* nav e ==================================================== */
 /* ---------------------------------------------------------- */

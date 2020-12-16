@@ -264,8 +264,11 @@
 /// @param {String} $ttfFileSrc ['myFont.ttf'] - Ttf File Source
 /// @param {String} $svgFileSrc ['myFont.svg'] - Svg File Source
 
-@mixin font-face($fontFamily: myFont, $eotFileSrc: 'myFont.eot', $woffFileSrc: 'myFont.woff', $ttfFileSrc: 'myFont.ttf', $svgFileSrc: 'myFont.svg', $svgFontID: '#myFont') {
+@mixin font-face($fontFamily: myFont, $fontWeight: 'noraml', $localFileSrc: 'myFont', $eotFileSrc: 'myFont.eot', $woffFileSrc: 'myFont.woff', $ttfFileSrc: 'myFont.ttf', $svgFileSrc: 'myFont.svg', $svgFontID: '#myFont') {
   font-family: $fontFamily;
+  font-style: normal;
+  font-weight: $fontWeight;
+  src: local($localFileSrc);
   src: url($eotFileSrc)  format('eot'),
        url($woffFileSrc) format('woff'),
        url($ttfFileSrc)  format('truetype'),
