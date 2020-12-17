@@ -3,7 +3,7 @@
 /*                                                            */
 /* file		: nav                                    	      */
 // writer	: Ryu
-// date		: 20190901
+// date		: 20201215
 /*                                                            */
 /* ========================================================== */
 /* ---------------------------------------------------------- */
@@ -45,20 +45,98 @@
         font-size:48px;
       }
     }
+    &:before {
+      @include posa_tl(50%,-8%);
+      margin-top:6px;
+      content:'';
+      width:0;
+      height:8px;
+      background:$point_clr;
+      opacity:0.8;
+      z-index:-1;
+      border-radius:4px;
+      transition:width 0.3s;
+    }
   }
-  .on {
+  li:hover,
+  li.on {
     a {
       &:before {
-        @include posa_tl(50%,-8%);
-        margin-top:6px;
-        content:'';
         width:116%;
-        height:8px;
-        background:$point_clr;
-        opacity:0.8;
-        z-index:-1;
-        border-radius:4px;
-        transition:width 0.3s;
+      }
+    }
+  }
+}
+
+.wnb_d1_wrap {
+  display:inline-block;
+  margin-left:120px;
+  li, a {
+    position:relative;
+    display:inline-block;
+  }
+  > li {
+    > a {
+      padding-right:10px;
+      padding-left:10px;
+      @include fnt_set($l,1.3em,44px,unset);
+      color:#959595;
+    }
+    .wnb_d2_wrap {
+      display:inline-block;
+      margin-left:10px;
+      > li {
+        padding-right:10px;
+        padding-left:10px;
+        > a {
+          @include fnt_set($r,3.1em,44px,unset);
+          color:#959595;
+        }
+      }
+    }
+    &.on {
+      > a {
+        font-size: 3.1em;
+        color:#000;
+        &:before {
+          @include posa_tl(50%,0);
+          margin-top:-4px;
+          content:'';
+          width:100%;
+          height:8px;
+          background:$point_clr;
+          opacity:0.8;
+          z-index:-1;
+          border-radius:4px;
+          transition:width 0.3s;
+        }
+      }
+    }
+    &:hover {
+      > a {
+        color: #000;
+      }
+    }
+    .wnb_d2_wrap {
+      > li {
+        &.on,
+        &:hover {
+          > a {
+            color:#000;
+            &:before {
+              @include posa_tl(50%,0);
+              margin-top:-2px;
+              content:'';
+              width:100%;
+              height:4px;
+              background:$point_clr;
+              opacity:0.8;
+              z-index:-1;
+              border-radius:4px;
+              transition:width 0.3s;
+            }
+          }
+        }
       }
     }
   }

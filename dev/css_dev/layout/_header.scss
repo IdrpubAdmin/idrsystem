@@ -3,7 +3,7 @@
 /*                                                            */
 /* file		: header                                	      */
 // writer	: Ryu
-// date		: 20190901
+// date		: 20201215
 /*                                                            */
 /* ========================================================== */
 /* ---------------------------------------------------------- */
@@ -43,6 +43,7 @@ $header_motion_time:0.4s;
   }
 }
 .header_logo {
+  display:inline-block;
   width:103px;
   cursor:pointer;
   @include mdq_m {

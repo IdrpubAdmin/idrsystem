@@ -274,12 +274,45 @@
 /* ---------------------------------------------------------- */
 /* ========================================================== */
 /*                                                            */
-/* file		: mypage                                   	      */
+/* file		: works                                   	      */
 /*                                                            */
 /* ========================================================== */
 /* ---------------------------------------------------------- */
-/* mypage s ================================================= */
-/* mypage e ================================================= */
+/* works s ================================================= */
+.works_box { position: relative; width: 100%; height: 100%; }
+
+.works_box .works_img_wrap { display: flex; justify-content: center; width: 100%; overflow-x: hidden; }
+
+.works_box .works_info_wrap { position: absolute; top: 257px; left: 50%; margin-left: -640px; }
+
+.works_box .works_info_wrap .wif_date { font-weight: 800; font-size: 1.6em; line-height: unset; letter-spacing: -0.32px; }
+
+.works_box .works_info_wrap .wif_logo { margin-top: 12px; }
+
+.works_box .works_info_wrap .wif_subject { margin-top: 18px; font-weight: 300; font-size: 3.5em; line-height: 48px; letter-spacing: -2.63px; }
+
+.works_box .works_info_wrap .wif_detail { margin-top: 100px; }
+
+.works_box .works_info_wrap .wif_detail .wifd_tit { font-weight: 700; font-size: 1.5em; line-height: unset; letter-spacing: -1.13px; }
+
+.works_box .works_info_wrap .wif_detail .wifd_con { margin-top: 24px; font-weight: 700; font-size: 1.5em; line-height: 22px; letter-spacing: unset; }
+
+@media (max-width: 736px) { .works_box .works_info_wrap { position: relative; top: unset; left: unset; margin-left: unset; padding-top: 30px; padding-right: 15px; padding-left: 15px; }
+  .works_box .works_info_wrap .wif_subject { font-size: 28px; }
+  .works_box .works_info_wrap .wif_detail { margin-top: 50px; } }
+
+.works_001 .works_img_wrap img { margin-top: 18px; margin-left: 640px; width: 1035px; }
+
+@media (max-width: 736px) { .works_001 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; width: 100%; } }
+
+.works_002 .works_img_wrap { background: url(../images/works/glyde/works_img_bg.png) no-repeat; background-size: 1920px; background-position: 50% 0; }
+
+.works_002 .works_img_wrap img { margin-top: 80px; margin-left: 640px; width: 251px; }
+
+@media (max-width: 736px) { .works_002 .works_img_wrap { background: none; }
+  .works_002 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-right: 20px; padding-left: 20px; width: 100%; } }
+
+/* works e ================================================= */
 /* ---------------------------------------------------------- */
 /* ========================================================== */
 /*                                                            */

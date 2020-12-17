@@ -227,3 +227,52 @@ Wrapper = (function(doc, global) {
 	
 	return obj;
 })(document, window);
+
+// WorksNav
+var WorksNav = WorksNav || {};
+WorksNav = (function(doc, global) {
+	// ELEMENTS INITIALIZE
+	var obj = {},
+		body = doc.querySelector('body'),
+		gnbD1 = doc.querySelector('.gnb_menu'),
+		wnbD1 = doc.querySelector('.wnb_d1_wrap');
+
+	// PRIVATE FUNCTIONS
+	function initialize(){
+		drawWorksNav(); //from works_data.js
+	}
+
+	obj.checkCurrentWorksNav = function(gnb,d1,d2) {
+		setTimeout(function(){
+			console.log("start");
+			//console.log(work sNavData);
+			gnbD1.querySelectorAll('li').forEach(function(_el,_idx){
+				let tempTxt1 = _el.querySelector('a').getAttribute('data-menu-id');
+				if(tempTxt1 === gnb){
+					_el.classList.add('on');
+				}
+			});
+			wnbD1.querySelectorAll('.d1_li').forEach(function(_el1,_idx1){
+				//console.log(_el)
+				let tempTxt1 = _el1.querySelector('a > span').innerText;
+				if(tempTxt1 === d1){
+					_el1.classList.add('on');
+				}
+				let wnbD2 = _el1.querySelector('.wnb_d2_wrap');
+				if(wnbD2) {
+					wnbD2.querySelectorAll('.d2_li').forEach(function(_el2,_idx2) {
+						let tempTxt2 = _el2.querySelector('a > span').innerText;
+						if(tempTxt2 === d2){
+							_el2.classList.add('on');
+						}
+					});
+				}
+			});
+		},100);
+	}
+
+	// VALIDATION
+	if(doc.querySelector('.wnb_d1_wrap')) setTimeout(initialize, 0);
+
+	return obj;
+})(document, window);

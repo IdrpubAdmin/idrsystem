@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* ========================================================== */
+/*                                                            */
+/* file		: works                                   	      */
+// writer	: Ryu
+// date		: 20201215
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* works s ================================================= */
+.works_box {
+  position:relative;
+  width:100%;
+  height:100%;
+  .works_img_wrap {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    overflow-x:hidden;
+    @include mdq_m {
+
+    }
+  }
+  .works_info_wrap {
+    @include posa_tl(257px,50%);
+    margin-left:-($max_w / 2);
+    .wif_date {
+      @include fnt_set($eb,1.6em,unset,-0.32px);
+    }
+    .wif_logo {
+      margin-top:12px;
+    }
+    .wif_subject {
+      margin-top:18px;
+      @include fnt_set($l,3.5em,48px,-2.63px);
+    }
+    .wif_detail {
+      margin-top:100px;
+      .wifd_tit {
+        @include fnt_set($b,1.5em,unset,-1.13px);
+      }
+      .wifd_con {
+        margin-top:24px;
+        @include fnt_set($b,1.5em,22px);
+      }
+    }
+    @include mdq_m {
+      position:relative;
+      top:unset;
+      left:unset;
+      margin-left:unset;
+      padding-top:$con_pd * 2;
+      @include setDfPadding();
+      .wif_subject {
+        font-size:28px;
+      }
+      .wif_detail {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.works_001 {
+  .works_img_wrap {
+    img {
+      margin-top:18px;
+      margin-left:640px;
+      width:1035px;
+    }
+    @include mdq_m {
+      img {
+        margin-top:0;
+        margin-left:0;
+        padding-left:20px;
+        width:100%;
+      }
+    }
+  }
+}
+.works_002 {
+  .works_img_wrap {
+    background:url(#{$img_url}works/glyde/works_img_bg.png) no-repeat;
+    background-size:1920px;
+    background-position:50% 0;
+    img {
+      margin-top:80px;
+      margin-left:640px;
+      width:251px;
+    }
+    @include mdq_m {
+      background:none;
+      img {
+        margin-top:0;
+        margin-left:0;
+        padding-top:20px;
+        padding-right:20px;
+        padding-left:20px;
+        width:100%;
+      }
+    }
+  }
+}
+/* works e ================================================= */
+/* ---------------------------------------------------------- */

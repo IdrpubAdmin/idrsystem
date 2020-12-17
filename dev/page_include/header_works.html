@@ -1,0 +1,63 @@
+		<!-- header -->
+		<header id="header">
+
+			<h1 class="header_logo"><a href="main.html"><img src="../images/common/logo_idr_top.png" alt="아이디알시스템 로고"></a></h1>
+
+			<script type="text/javascript" src="../js/works_data.js?v=20180516"></script>
+			<ul class="wnb_d1_wrap">
+				<script id="drawWorksNavTmp" type="text/x-handlebars-template">
+					{{#wnb_d1}}
+					<li class="d1_li {{state}}">
+						<a href="{{url}}"><span>{{txt}}</span></a>
+						{{#if wnb_d2}}
+						<ul class="wnb_d2_wrap">
+							{{#wnb_d2}}
+							<li class="d2_li {{state}}">
+								<a href="{{url}}"><span>{{txt}}</span></a>
+							</li>
+							{{/wnb_d2}}
+						</ul>
+						{{/if}}
+					</li>
+					{{/wnb_d1}}
+				</script>
+			</ul>
+
+			<!--
+			<ul class="wnb_d1_wrap">
+				<li>
+					<a href="#none"><span>2021</span></a>
+				</li>
+				<li class="on">
+					<a href="#none"><span>2020</span></a>
+					<ul class="wnb_d2_wrap">
+						<li>
+							<a href="#none"><span>1</span></a>
+						</li>
+						<li class="on">
+							<a href="#none"><span>2</span></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#none"><span>2019</span></a>
+				</li>
+				<li>
+					<a href="#none"><span>2018</span></a>
+				</li>
+				<li>
+					<a href="#none"><span>2017</span></a>
+				</li>
+			</ul>
+			-->
+
+			<button type="button" class="gnb_btn" title="메뉴버튼">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+
+		</header>
+
+		<!-- @@include gnb.html -->
+		<!-- //header -->

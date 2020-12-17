@@ -3,13 +3,13 @@
 /*                                                            */
 /* file		: footer                                	      */
 // writer	: Ryu
-// date		: 20190901
+// date		: 20201215
 /*                                                            */
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* footer s ================================================= */
 .main_footer {
-  margin-top:80px;
+  //margin-top:80px;
   .ft_num_wrap {
     display: flex;
     justify-content: space-between;
@@ -50,6 +50,55 @@
     }
     text-align:center;
     border-top:3px solid #000;
+  }
+}
+.sub_footer {
+  padding-bottom:45px;
+  @include posa_bl(0,10px);
+  .ft_info_wrap {
+    padding-top:10px;
+    padding-left:85px;
+    background:url(#{$img_url}common/logo_idr_btm.png) no-repeat;
+    .service_ul {
+      li {
+        @include fnt_set($l, 1.7em, 23px, -1.28px);
+      }
+    }
+    .sep_ul {
+      margin-top:26px;
+      li {
+        margin-top:0;
+        margin-left:10px;
+        padding-left:10px;
+        @include fnt_set($l,1.3em,19px,-0.98px);
+        &:first-child,
+        &.no_sep {
+          margin-left:0;
+          padding-left:0;
+        }
+        &.no_sep {
+          display:block;
+        }
+      }
+    }
+    .copyright {
+      margin-top:10px;
+      @include fnt_set($l,1.3em,unset,0.39px);
+    }
+  }
+  @include mdq_m {
+    position:relative;
+    bottom:unset;
+    left:unset;
+    @include setDfPadding();
+    .ft_info_wrap {
+      padding-left:0;
+      background-position:100% 100%;
+      border-top:1px solid $border_clr;
+      .service_ul {
+        display:none;
+      }
+    }
   }
 }
 /* footer e ================================================= */

@@ -3,14 +3,19 @@
 /*                                                            */
 /* file		: container                                	      */
 // writer	: Ryu
-// date		: 20190901
+// date		: 20201215
 /*                                                            */
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* container s ============================================== */
 #container {
+  position:relative;
   @include mdq_m {
     padding-top:$header_h;
+  }
+  #contents {
+    width:100%;
+    padding-bottom:80px;
   }
 }
 .inner {

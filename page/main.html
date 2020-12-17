@@ -36,12 +36,12 @@
 <div id="wrapper">
   
   <!-- container -->
-  <div id="container">
+  <div id="container" class="con_main">
 
 		<!-- header -->
 		<header id="header">
 
-			<h1 class="header_logo"><img src="../images/common/logo_idr_top.png" alt="아이디알시스템 로고"></h1>
+			<h1 class="header_logo"><a href="main.html"><img src="../images/common/logo_idr_top.png" alt="아이디알시스템 로고"></a></h1>
 
 			<button type="button" class="gnb_btn" title="메뉴버튼">
 				<span class="line"></span>
@@ -51,17 +51,19 @@
 
 		</header>
 
+		<!-- gnb_wrap -->
 		<div class="gnb_wrap">
 			<ul class="gnb_menu">
-				<li class="on"><a href="#none"><span>service</span></a></li>
-				<li><a href="works_001.html"><span>work</span></a></li>
-				<li><a href="#none"><span>contact</span></a></li>
+				<li><a href="service_001.html" data-menu-id="01"><span>service</span></a></li>
+				<li><a href="works_002.html" data-menu-id="02"><span>work</span></a></li>
+				<li><a href="#none" data-menu-id="03"><span>contact</span></a></li>
 			</ul>
 		</div>
+		<!-- //gnb_wrap -->
 		<!-- //header -->
 
     <!-- contents | 컨텐츠영역 -->
-    <div id="contents" class="con_main">
+    <div id="contents">
 
 	    <div class="inner">
 
@@ -135,7 +137,7 @@
 			    <h3 class="sec_tit">IDR 포트폴리오</h3>
 			    <ul>
 				    <li class="on">
-					    <a href="#none">
+					    <a href="works_002.html">
 						    <div class="ptfl_item">
 							    <img src="../images/main/list/ptfl_thumb_06.jpg" alt="글라이드쇼핑몰">
 							    <div class="ptfl_info">
@@ -147,7 +149,7 @@
 					    </a>
 				    </li>
 				    <li>
-					    <a href="#none">
+					    <a href="works_001.html">
 						    <div class="ptfl_item">
 							    <img src="../images/main/list/ptfl_thumb_05.jpg" alt="글라이드쇼핑몰">
 							    <div class="ptfl_info">
@@ -263,12 +265,18 @@
 <!-- //layer_popup_wrap -->
 
 <!-- script_include -->
+
+<!-- plugin_handlebars -->
+<script type="text/javascript" src="../plugin/handlebars/handlebars-v4.7.6.js"></script>
+<!-- //plugin_handlebars -->
+
 <!-- plugin_swiper -->
 <link rel="stylesheet" type="text/css" href="../plugin/swiper-master/css/swiper.min.css">
 <script type="text/javascript" src="../plugin/swiper-master/js/swiper.min.js"></script>
 <!-- plugin_swiper -->
 
 <script type="text/javascript" src="../js/common.js"></script>
+
 <!-- //script_include -->
 
 <script>
