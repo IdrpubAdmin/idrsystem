@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang='ko'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<!-- og-tag s -->
+	<meta property="og:title" content="(주)아이디알시스템 IDRSYSTEM">
+	<meta property="og:url" content="https://www.url.com">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="컨텐츠내용">
+	<meta property="og:image" content="https://www.url.com/img/img.png">
+	<!-- og-tag e -->
+	<title>(주)아이디알시스템 IDRSYSTEM</title>
+	<link rel="shortcut icon" href="../images/favicon/favicon.ico">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../css/default.css">
+	<link rel="stylesheet" type="text/css" href="../css/display.css">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+
+<!-- wrapper -->
+<div id="wrapper">
+  
+  <!-- container -->
+  <div id="container" class="con_contact contact_history">
+
+	<script type="text/javascript" src="../js/lnb_data_contact.js"></script>
+		<!-- header -->
+		<header id="header">
+			<h1 class="header_logo"><a href="main.html"><img src="../images/common/logo_idr_top.png" alt="아이디알시스템 로고"></a></h1>
+		<!-- lnb_wrap -->
+		<ul class="lnb_wrap lnb_d1_wrap">
+			<script id="drawLnbNavTmp" type="text/x-handlebars-template">
+				{{#lnb_d1}}
+					<li class="d1_li {{state}}">
+						<a href="{{url}}" data-menu-id="{{num}}"><span>{{txt}}</span></a>
+						{{#if lnb_d2}}
+							<ul class="lnb_d2_wrap">
+								{{#lnb_d2}}
+									<li class="d2_li {{state}}">
+										<a href="{{url}}" data-menu-id="{{num}}"><span>{{txt}}</span></a>
+									</li>
+								{{/lnb_d2}}
+							</ul>
+						{{/if}}
+					</li>
+				{{/lnb_d1}}
+			</script>
+		</ul>
+		<!-- //lnb_wrap -->
+			<button type="button" class="gnb_btn" title="메뉴버튼">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+		</header>
+		<!-- gnb_wrap -->
+		<div class="gnb_wrap">
+			<ul class="gnb_menu">
+				<li><a href="javascript:forWroking()" data-menu-id="gnb_01"><span>service</span></a></li>
+				<li><a href="works_2020_001.html" data-menu-id="gnb_02"><span>work</span></a></li>
+				<li><a href="intro.html" data-menu-id="gnb_03"><span>contact</span></a></li>
+			</ul>
+		</div>
+		<!-- //gnb_wrap -->
+		<!-- //header -->
+
+    <!-- contents | 컨텐츠영역 -->
+    <div id="contents">
+
+	    <!-- intro_box -->
+	    <section class="history_box">
+		    <div class="inner">
+
+			    <div class="txt_wrap">
+				    <p class="tw_1">도전/ 전진 / 끊임없는 노력</p>
+				    <p class="tw_2">㈜아이디알시스템은 2010년 6월에 설립되어 끊임없는 도전과 전진을<br>
+					    반복하며 ICT 분야에 서 빠르게 성장하고 있습니다.<br>
+					    IDR은 현재에 안주하지 않고 더 나은 미래를 준비하는 협업과 동의 Business Platform을
+					    구축하고, ICT Leading Company로 성장해 나가겠습니다.</p>
+			    </div>
+			    <ul class="history_ul_wrap">
+				    <li class="side_r">
+					    <div class="hist_item">
+						    <span class="year">2018</span>
+						    <p class="desc_line">
+							    <b>05월 /</b> 식본점 이전(서울 영등포구 양평로21길 26, 8층 (아이에스비즈타워1차)
+						    </p>
+					    </div>
+				    </li>
+				    <li class="side_l">
+					    <div class="hist_item">
+						    <span class="year">2017</span>
+						    <p class="desc_line">
+							    <b>03월 /</b> /현대홈쇼핑 상시개발업체 선정
+						    </p>
+					    </div>
+				    </li>
+				    <li class="side_r">
+					    <div class="hist_item">
+						    <span class="year">2015</span>
+						    <p class="desc_line">
+							    <b>08월 /</b> 기술혁신형 중소기업(INNO-BIZ) 인증 (제150103-01098호)
+						    </p>
+						    <p class="desc_line">
+							    <b>05월 /</b> 삼성SDS 2015년도 Certified partner(협력사)로 선정
+						    </p>
+						    <p class="desc_line">
+							    <b>05월 /</b> 본점 이전(서울 성동구 아차산로 67-16, 9층 (성수동2가,세종빌딩3)
+						    </p>
+					    </div>
+				    </li>
+				    <li class="side_l">
+					    <div class="hist_item">
+						    <span class="year">2014</span>
+						    <p class="desc_line">
+							    <b>12월 /</b> 기업부설연구소로 연구소 승격 (IDR 옴니채널 연구소 – 제2014115962호)
+						    </p>
+						    <p class="desc_line">
+							    <b>05월 /</b> 삼성SDS 2014년도 Certified partner(협력사)로 선정
+						    </p>
+					    </div>
+				    </li>
+				    <li class="side_r">
+					    <div class="hist_item">
+						    <span class="year">2013</span>
+						    <p class="desc_line">
+							    <b>12월 /</b> 독일 e-commerc`e solution 업체인 Hybris software와
+							    partnership 계약
+						    </p>
+						    <p class="desc_line">
+							    <b>11월 /</b> 상호변경 ㈜쓰리에이파트너스 › ->  ㈜아이디알시스템
+						    </p>
+						    <p class="desc_line">
+							    <b>07월 /</b> 벤처기업등록 (제 20130107370호)
+						    </p>
+						    <p class="desc_line">
+							    <b>05월 /</b> 연구개발전담부서 설립 ( 제 201315432호)
+						    </p>
+					    </div>
+				    </li>
+				    <li class="side_l">
+					    <div class="hist_item">
+						    <span class="year">2010</span>
+						    <p class="desc_line">
+							    <b>11월 /</b> 대표이사 정운평 사임  및  송돈섭 취임
+						    </p>
+						    <p class="desc_line">
+							    <b>06월 /</b> ㈜쓰리에이파트너스 설립 (납입자본금: 50백만원)
+						    </p>
+					    </div>
+				    </li>
+			    </ul>
+
+		    </div>
+	    </section>
+	    <!-- //intro_box -->
+
+    </div>
+    <!-- //contents | 컨텐츠영역 -->
+
+		<!-- sub_footer -->
+		<footer id="footer" class="sub_footer">
+			<div class="inner">
+
+				<div class="ft_info_wrap">
+					<ul class="service_ul">
+						<li>시스템통합</li>
+						<li class="sf">/</li>
+						<li>소프트웨어개발</li>
+						<li class="sf">/</li>
+						<li>정보인프라구축 서비스</li>
+					</ul>
+					<ul class="sep_ul">
+						<li>회사명 : (주)아이디알 시스템</li>
+						<li>대표자 : 송돈섭</li>
+						<li>07205  서울시 영등포구 양평로22길 21 코오롱디지털타워 813호</li>
+						<li class="no_sep">대표번호 : 02-6925-0602</li>
+						<li>사업자번호 : 211-88-45959</li>
+					</ul>
+					<div class="copyright">
+						<p>Copyright@2020 IDR Systems Co.,Ltd.All Rights Reserved.</p>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- //sub_footer -->
+
+  </div>
+  <!-- //container -->
+
+</div>
+<!-- //wrapper -->
+
+<!-- layer_popup_wrap -->
+<div class="lp_wrap lp_depth1"></div>
+<!-- //layer_popup_wrap -->
+
+<!-- script_include -->
+
+<!-- plugin_handlebars -->
+<script type="text/javascript" src="../plugin/handlebars/handlebars-v4.7.6.js"></script>
+<!-- //plugin_handlebars -->
+
+<!-- plugin_swiper -->
+<link rel="stylesheet" type="text/css" href="../plugin/swiper-master/css/swiper.min.css">
+<script type="text/javascript" src="../plugin/swiper-master/js/swiper.min.js"></script>
+<!-- plugin_swiper -->
+
+<script type="text/javascript" src="../js/style.js?v=23"></script>
+
+<!-- //script_include -->
+
+<script>
+(function(){
+    WorksNav.checkCurrentLnbNav("gnb_03","lnb1_02"); //현재 페이지 체크
+    StyleCommon.updateDocTitle('연혁');
+})();
+</script>
+
+</body>
+</html>

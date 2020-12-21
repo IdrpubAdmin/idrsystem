@@ -63,6 +63,7 @@
 
 /* border */
 .testBorer {border:1px solid red !important;}
+.bdn {border: none !important;}
 .bd0 {border:0 !important;}
 .bd1s333 {border:1px solid #333 !important;}
 .bd1s666 {border:1px solid #666 !important;}
@@ -118,7 +119,7 @@ $dotdiv:'.';
 /* vertical-align */
 .va_t {vertical-align: top !important;}
 .va_m {vertical-align: middle !important;}
-.bdn {border: none !important;}
+.va_b {vertical-align: bottom !important;}
 
 /* cursor */
 .crsrC {cursor:crosshair !important;}

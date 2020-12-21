@@ -191,6 +191,54 @@
 
 .text_desc { font-weight: 300; font-size: 1.5em; line-height: 22px; letter-spacing: -1.13px; color: #000; }
 
+.visual_table .td_bg_1 { padding: 40px 30px; color: #fff; background: #00b2e2; }
+
+.visual_table .td_bg_2 { padding: 40px 24px; background: #eee; }
+
+.visual_table .t_lg { font-weight: 300; font-size: 2.5em; line-height: 30px; letter-spacing: -1.88px; }
+
+.visual_table .t_sm { font-weight: 300; font-size: 1.5em; line-height: 20px; letter-spacing: -1.13px; }
+
+.line_bx_wrap { width: 100%; }
+
+.line_bx_wrap h5 { font-weight: 300; font-size: 1.5em; line-height: 44px; letter-spacing: -1.13px; }
+
+.line_bx_wrap h5 b { font-weight: 700; font-size: 19px; }
+
+.line_bx_wrap .line_bx { padding-top: 40px; padding-bottom: 50px; border-top: 2px solid #000; border-bottom: 1px solid #dcdcdc; }
+
+.line_bx_wrap .line_bx .txt_desc { font-weight: 300; font-size: 1.7em; line-height: 24px; letter-spacing: -1.28px; }
+
+.tag_label_wrap { padding-top: 10px; display: flex; justify-content: center; flex-wrap: wrap; width: 100%; }
+
+.tag_label_wrap .tag_label { margin: 20px 20px 0; padding: 15px 30px; display: inline-block; font-weight: 300; font-size: 2.1em; line-height: unset; letter-spacing: -1.58px; border: 1px solid #000; border-radius: 35px; }
+
+.rect_ul { display: flex; justify-content: space-between; }
+
+.rect_ul.type1 li { width: 200px; }
+
+.rect_ul.type1 .rect_item .rect { display: flex; align-items: center; justify-content: center; width: 100%; height: 136px; background: #1293c3; border-radius: 30px; }
+
+.rect_ul.type1 .rect_item .rect img { width: auto; }
+
+.rect_ul.type1 .rect_item p { padding-top: 20px; font-weight: 300; font-size: 2.1em; line-height: unset; letter-spacing: -1.58px; }
+
+.rect_ul.type1 .rect_item p span { padding-top: 20px; display: block; font-weight: 300; font-size: 15px; line-height: 24px; letter-spacing: -1.58px; }
+
+.rect_ul.type2 li { width: 200px; }
+
+.rect_ul.type2 .rect_item .rect { padding: 56px 15px 0 20px; width: 100%; height: 160px; background: #535353; }
+
+.rect_ul.type2 .rect_item .rect span { font-weight: 300; font-size: 2.1em; line-height: 26px; letter-spacing: -1.58px; color: #fff; }
+
+.gray_line { display: inline-block; width: 97px; height: 1px; background: url(../images/contact/cntc_line_bg.png) no-repeat; }
+
+.number_ul .number_item { display: flex; align-items: center; }
+
+.number_ul .number_item .number { display: inline-block; width: 80px; font-family: "Loves", sans-serif; font-size: 130px; background: url(../images/contact/cntc_line_bg2.png) no-repeat 100% 50%; }
+
+.number_ul .number_item .number_con { display: inline-block; padding-left: 20px; width: calc(100% - 90px); }
+
 /* content e ================================================ */
 /* ---------------------------------------------------------- */
 /* ========================================================== */
@@ -271,6 +319,101 @@
 .portfolio_box ul > li.on a .ptfl_info, .portfolio_box ul > li:hover a .ptfl_info { opacity: 1; }
 
 /* main e =================================================== */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: contact                                  	      */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* contact s ================================================ */
+.con_contact #contents { padding-top: 200px; }
+
+@media (max-width: 736px) { .con_contact #contents { padding-top: 40px; padding-right: 15px; padding-left: 15px; } }
+
+.intro_box { position: relative; display: inline-block; width: 100%; height: 100%; }
+
+.intro_box .left_bx { float: left; display: flex; flex-direction: column; justify-content: space-between; width: 50%; height: 848px; }
+
+.intro_box .right_bx { float: right; width: 50%; }
+
+@media (max-width: 736px) { .intro_box .left_bx, .intro_box .right_bx { width: 100%; height: unset; } }
+
+.numbers_wrap li { line-height: 44px; }
+
+.numbers_wrap .nmb_num { font-family: "Loves", sans-serif; font-size: 9.6em; }
+
+.numbers_wrap .nmb_txt { margin-left: -10px; font-weight: 300; font-size: 1.7em; letter-spacing: -1.28px; color: #aaa; vertical-align: text-bottom; }
+
+@media (max-width: 736px) { .numbers_wrap .nmb_num { font-size: 5.4em; }
+  .numbers_wrap .nmb_txt { margin-left: 0; vertical-align: super; } }
+
+.txt_wrap { max-width: 450px; }
+
+.txt_wrap .tw_1 { padding-bottom: 30px; font-weight: 300; font-size: 2.7em; line-height: 35px; letter-spacing: -2.03px; }
+
+.txt_wrap .tw_2 { padding-bottom: 30px; font-weight: 300; font-size: 1.5em; line-height: 21px; letter-spacing: -1.13px; }
+
+@media (max-width: 736px) { .txt_wrap { padding-top: 40px; } }
+
+.contact_history #contents { padding-top: 160px; padding-bottom: 140px !important; background: url(../images/contact/cntc_img_03.png); background-repeat: repeat-y; background-size: 286px; background-position: 50% 0; }
+
+@media (max-width: 736px) { .contact_history #contents { padding-top: 0px; background: none; } }
+
+.history_box li { margin-top: -10px; }
+
+.history_box .side_l .hist_item { padding-right: 64%; text-align: right; }
+
+.history_box .side_r .hist_item { padding-left: 64%; }
+
+.history_box .hist_item .year { display: inline-block; margin-bottom: 10px; font-family: "Loves", sans-serif; font-size: 5.2em; }
+
+.history_box .hist_item .desc_line { font-weight: 300; font-size: 1.5em; line-height: 24px; letter-spacing: -1.13px; }
+
+.history_box .hist_item .desc_line b { font-weight: 700; }
+
+@media (max-width: 736px) { .history_box li { margin-top: 40px; }
+  .history_box li.side_l .hist_item, .history_box li.side_r .hist_item { padding-right: 0; padding-left: 0; text-align: left; } }
+
+.recruit_box .line_bx_wrap { margin-top: 120px; }
+
+.recruit_box .line_bx_wrap:first-child { margin-top: 0; }
+
+.recruit_box .line_bx_wrap .line_bx .txt_desc { padding-left: 64px; padding-right: 64px; }
+
+@media (max-width: 736px) { .recruit_box .line_bx_wrap .line_bx .txt_desc { padding-right: 15px; padding-left: 15px; } }
+
+.recruit_box .line_bx_02 .rect_ul { margin-top: 40px; }
+
+@media (max-width: 736px) { .recruit_box .line_bx_02 .rect_ul { flex-wrap: wrap; }
+  .recruit_box .line_bx_02 .rect_ul li { margin-top: 40px; width: 100%; padding: 0 10px; } }
+
+.recruit_box .line_bx_03 .rect_ul { margin-top: 60px; }
+
+@media (max-width: 736px) { .recruit_box .line_bx_03 .rect_ul { flex-wrap: wrap; margin-top: 20px; }
+  .recruit_box .line_bx_03 .rect_ul li { margin-top: 40px; width: 100%; } }
+
+.recruit_box .line_bx_04 .ex_subject_wrap { margin-top: 45px; }
+
+.recruit_box .line_bx_04 .ex_subject_wrap p { padding: 35px 30px; font-weight: 300; font-size: 25px; line-height: unset; letter-spacing: -1.88px; border: 1px solid #000; background: #f7f6f6; }
+
+.recruit_box .line_bx_04 .ex_subject_wrap p small { font-size: 17px; }
+
+.recruit_box .line_bx_04 .ex_subject_wrap p b { font-weight: 700; font-size: 15px; }
+
+.recruit_box .line_bx_04 .number_ul { margin-top: 20px; display: flex; justify-content: space-around; }
+
+@media (max-width: 736px) { .recruit_box .line_bx_04 .number_ul { flex-wrap: wrap; padding-right: 15px; padding-left: 15px; } }
+
+.recruit_box .line_bx_04 .number_ul li { width: 33.33%; }
+
+@media (max-width: 736px) { .recruit_box .line_bx_04 .number_ul li { width: 100%; } }
+
+.recruit_box .line_bx_04 .number_ul .number_con { font-weight: 400; font-size: 1.9em; line-height: 24px; letter-spacing: -1.43px; }
+
+.recruit_box .line_bx_04 .number_ul .number_con span { display: block; padding-top: 20px; font-size: 15px; }
+
+/* contact e ================================================ */
 /* ---------------------------------------------------------- */
 /* ========================================================== */
 /*                                                            */

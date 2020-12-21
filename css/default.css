@@ -34,6 +34,12 @@
 
 /* font : KeepCalm-M e ====================================== */
 /* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* font : Loves s =========================================== */
+@font-face { font-family: "Loves"; font-style: normal; font-weight: 400; src: local("fonts/LOVES"); src: url("fonts/LOVES.eot") format("eot"), url("fonts/LOVES-REG.woff") format("woff"), url("fonts/LOVES-REG.ttf") format("truetype"), url("fonts/LOVES-REG.svg#LOVES") format("svg"); }
+
+/* font : Loves e =========================================== */
+/* ---------------------------------------------------------- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -1859,6 +1865,8 @@ img { width: 100%; }
 /* border */
 .testBorer { border: 1px solid red !important; }
 
+.bdn { border: none !important; }
+
 .bd0 { border: 0 !important; }
 
 .bd1s333 { border: 1px solid #333 !important; }
@@ -2239,7 +2247,7 @@ img { width: 100%; }
 
 .va_m { vertical-align: middle !important; }
 
-.bdn { border: none !important; }
+.va_b { vertical-align: bottom !important; }
 
 /* cursor */
 .crsrC { cursor: crosshair !important; }
@@ -2290,6 +2298,10 @@ img { width: 100%; }
 
 #header.gnb_on { background: none; }
 
+#header.gnb_on .lnb_d1_wrap > li.on > a, #header.gnb_on .lnb_d1_wrap > li:hover > a, #header.gnb_on .lnb_d2_wrap > li.on > a, #header.gnb_on .lnb_d2_wrap > li:hover > a { color: #fff; }
+
+@media (max-width: 736px) { #header.gnb_on .lnb_d1_wrap { display: block; } }
+
 .header_logo { display: inline-block; width: 103px; cursor: pointer; }
 
 @media (max-width: 736px) { .header_logo { width: 80px; } }
@@ -2329,11 +2341,12 @@ img { width: 100%; }
 
 .gnb_menu { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; width: 100%; height: 100%; }
 
-@media (max-width: 736px) { .gnb_menu { flex-direction: column; padding-top: 100px; padding-bottom: 100px; } }
+@media (max-width: 736px) { .gnb_menu { flex-direction: column; padding-top: 100px; padding-bottom: 100px; }
+  .gnb_menu.has_wnd_nav { padding-top: 240px; } }
 
 .gnb_menu a { position: relative; display: inline-block; }
 
-.gnb_menu a span { color: #fff; font-family: "KeepCalmM"; font-size: 68px; letter-spacing: 2.04px; }
+.gnb_menu a span { color: #fff; font-family: "KeepCalmM", sans-serif; font-size: 68px; letter-spacing: 2.04px; }
 
 @media (max-width: 736px) { .gnb_menu a span { font-size: 48px; } }
 
@@ -2341,27 +2354,29 @@ img { width: 100%; }
 
 .gnb_menu li:hover a:before, .gnb_menu li.on a:before { width: 116%; }
 
-.wnb_d1_wrap { display: inline-block; margin-left: 120px; }
+.lnb_d1_wrap { display: inline-block; margin-left: 120px; }
 
-.wnb_d1_wrap li, .wnb_d1_wrap a { position: relative; display: inline-block; }
+@media (max-width: 736px) { .lnb_d1_wrap { display: none; margin-top: 40px; margin-left: 0; } }
 
-.wnb_d1_wrap > li > a { padding-right: 10px; padding-left: 10px; font-weight: 300; font-size: 1.3em; line-height: 44px; letter-spacing: unset; color: #959595; }
+.lnb_d1_wrap li, .lnb_d1_wrap a { position: relative; display: inline-block; }
 
-.wnb_d1_wrap > li .wnb_d2_wrap { display: inline-block; margin-left: 10px; }
+.lnb_d1_wrap > li > a { padding-right: 10px; padding-left: 10px; font-weight: 300; font-size: 1.3em; line-height: 44px; letter-spacing: unset; color: #959595; }
 
-.wnb_d1_wrap > li .wnb_d2_wrap > li { padding-right: 10px; padding-left: 10px; }
+.lnb_d1_wrap > li .lnb_d2_wrap { display: inline-block; margin-left: 10px; }
 
-.wnb_d1_wrap > li .wnb_d2_wrap > li > a { font-weight: 400; font-size: 3.1em; line-height: 44px; letter-spacing: unset; color: #959595; }
+.lnb_d1_wrap > li .lnb_d2_wrap > li { padding-right: 10px; padding-left: 10px; }
 
-.wnb_d1_wrap > li.on > a { font-size: 3.1em; color: #000; }
+.lnb_d1_wrap > li .lnb_d2_wrap > li > a { font-weight: 400; font-size: 3.1em; line-height: 44px; letter-spacing: unset; color: #959595; }
 
-.wnb_d1_wrap > li.on > a:before { position: absolute; top: 50%; left: 0; margin-top: -4px; content: ''; width: 100%; height: 8px; background: #00b2e2; opacity: 0.8; z-index: -1; border-radius: 4px; transition: width 0.3s; }
+.lnb_d1_wrap > li.on > a { font-size: 3.1em; color: #000; }
 
-.wnb_d1_wrap > li:hover > a { color: #000; }
+.lnb_d1_wrap > li.on > a:before { position: absolute; top: 50%; left: 0; margin-top: -4px; content: ''; width: 100%; height: 8px; background: #00b2e2; opacity: 0.8; z-index: -1; border-radius: 4px; transition: width 0.3s; }
 
-.wnb_d1_wrap > li .wnb_d2_wrap > li.on > a, .wnb_d1_wrap > li .wnb_d2_wrap > li:hover > a { color: #000; }
+.lnb_d1_wrap > li:hover > a { color: #000; }
 
-.wnb_d1_wrap > li .wnb_d2_wrap > li.on > a:before, .wnb_d1_wrap > li .wnb_d2_wrap > li:hover > a:before { position: absolute; top: 50%; left: 0; margin-top: -2px; content: ''; width: 100%; height: 4px; background: #00b2e2; opacity: 0.8; z-index: -1; border-radius: 4px; transition: width 0.3s; }
+.lnb_d1_wrap > li .lnb_d2_wrap > li.on > a, .lnb_d1_wrap > li .lnb_d2_wrap > li:hover > a { color: #000; }
+
+.lnb_d1_wrap > li .lnb_d2_wrap > li.on > a:before, .lnb_d1_wrap > li .lnb_d2_wrap > li:hover > a:before { position: absolute; top: 50%; left: 0; margin-top: -2px; content: ''; width: 100%; height: 4px; background: #00b2e2; opacity: 0.8; z-index: -1; border-radius: 4px; transition: width 0.3s; }
 
 /* nav e ==================================================== */
 /* ---------------------------------------------------------- */
@@ -2372,7 +2387,7 @@ img { width: 100%; }
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* container s ============================================== */
-#container { position: relative; }
+#container { position: relative; width: 100%; height: 100%; }
 
 @media (max-width: 736px) { #container { padding-top: 70px; } }
 
@@ -2407,25 +2422,45 @@ img { width: 100%; }
 
 .main_footer .copyright p { font-weight: 300; font-size: 1.5em; letter-spacing: 0.45px; }
 
-.sub_footer { padding-bottom: 45px; position: absolute; bottom: 0; left: 10px; }
+.sub_footer .ft_info_wrap { padding-top: 20px; border-top: 2px solid #000; }
 
-.sub_footer .ft_info_wrap { padding-top: 10px; padding-left: 85px; background: url(../images/common/logo_idr_btm.png) no-repeat; }
+.sub_footer .ft_info_wrap .service_ul { padding-top: 5px; padding-bottom: 15px; padding-left: 95px; background: url(../images/common/logo_idr_btm.png) no-repeat; background-size: 68px; border-bottom: 1px solid #dcdcdc; font-weight: 300; font-size: 1.7em; line-height: 23px; letter-spacing: -1.28px; }
 
-.sub_footer .ft_info_wrap .service_ul li { font-weight: 300; font-size: 1.7em; line-height: 23px; letter-spacing: -1.28px; }
+.sub_footer .ft_info_wrap .service_ul li { display: inline-block; }
 
-.sub_footer .ft_info_wrap .sep_ul { margin-top: 26px; }
+.sub_footer .ft_info_wrap .service_ul li.sf { padding-right: 10px; padding-left: 10px; }
 
-.sub_footer .ft_info_wrap .sep_ul li { margin-top: 0; margin-left: 10px; padding-left: 10px; font-weight: 300; font-size: 1.3em; line-height: 19px; letter-spacing: -0.98px; }
+@media (max-width: 736px) { .sub_footer .ft_info_wrap .service_ul { padding-left: 20px; font-size: 1.3em; } }
 
-.sub_footer .ft_info_wrap .sep_ul li:first-child, .sub_footer .ft_info_wrap .sep_ul li.no_sep { margin-left: 0; padding-left: 0; }
+.sub_footer .ft_info_wrap .sep_ul { display: inline-block; padding-top: 15px; padding-left: 75px; padding-bottom: 25px; max-width: 680px; }
 
-.sub_footer .ft_info_wrap .sep_ul li.no_sep { display: block; }
+.sub_footer .ft_info_wrap .sep_ul li { margin-top: 5px; margin-left: 10px; padding-left: 10px; font-weight: 300; font-size: 1.3em; line-height: 19px; letter-spacing: -0.98px; }
 
-.sub_footer .ft_info_wrap .copyright { margin-top: 10px; font-weight: 300; font-size: 1.3em; line-height: unset; letter-spacing: 0.39px; }
+@media (max-width: 736px) { .sub_footer .ft_info_wrap .sep_ul { padding-left: 5px; } }
 
-@media (max-width: 736px) { .sub_footer { position: relative; bottom: unset; left: unset; padding-right: 15px; padding-left: 15px; }
-  .sub_footer .ft_info_wrap { padding-left: 0; background-position: 100% 100%; border-top: 1px solid #f1f1f1; }
-  .sub_footer .ft_info_wrap .service_ul { display: none; } }
+.sub_footer .ft_info_wrap .copyright { float: right; padding-top: 25px; margin-right: 90px; font-weight: 300; font-size: 1.3em; line-height: 33px; letter-spacing: 0.39px; color: #707070; }
+
+@media (max-width: 736px) { .sub_footer .ft_info_wrap .copyright { padding-top: 0; padding-bottom: 20px; padding-left: 20px; line-height: 20px; } }
+
+.sub_footer_work { padding-bottom: 45px; position: absolute; bottom: 0; left: 10px; }
+
+.sub_footer_work .ft_info_wrap { padding-top: 10px; padding-left: 85px; background: url(../images/common/logo_idr_btm.png) no-repeat; }
+
+.sub_footer_work .ft_info_wrap .service_ul li { font-weight: 300; font-size: 1.7em; line-height: 23px; letter-spacing: -1.28px; }
+
+.sub_footer_work .ft_info_wrap .sep_ul { margin-top: 26px; }
+
+.sub_footer_work .ft_info_wrap .sep_ul li { margin-top: 0; margin-left: 10px; padding-left: 10px; font-weight: 300; font-size: 1.3em; line-height: 19px; letter-spacing: -0.98px; }
+
+.sub_footer_work .ft_info_wrap .sep_ul li:first-child, .sub_footer_work .ft_info_wrap .sep_ul li.no_sep { margin-left: 0; padding-left: 0; }
+
+.sub_footer_work .ft_info_wrap .sep_ul li.no_sep { display: block; }
+
+.sub_footer_work .ft_info_wrap .copyright { margin-top: 10px; font-weight: 300; font-size: 1.3em; line-height: unset; letter-spacing: 0.39px; }
+
+@media (max-width: 736px) { .sub_footer_work { position: relative; bottom: unset; left: unset; padding-right: 15px; padding-left: 15px; }
+  .sub_footer_work .ft_info_wrap { padding-left: 0; background-position: 100% 100%; border-top: 1px solid #f1f1f1; }
+  .sub_footer_work .ft_info_wrap .service_ul { display: none; } }
 
 /* footer e ================================================= */
 /* ---------------------------------------------------------- */

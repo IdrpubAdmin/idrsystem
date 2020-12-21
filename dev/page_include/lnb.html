@@ -1,0 +1,20 @@
+		<!-- lnb_wrap -->
+		<ul class="lnb_wrap lnb_d1_wrap">
+			<script id="drawLnbNavTmp" type="text/x-handlebars-template">
+				{{#lnb_d1}}
+					<li class="d1_li {{state}}">
+						<a href="{{url}}" data-menu-id="{{num}}"><span>{{txt}}</span></a>
+						{{#if lnb_d2}}
+							<ul class="lnb_d2_wrap">
+								{{#lnb_d2}}
+									<li class="d2_li {{state}}">
+										<a href="{{url}}" data-menu-id="{{num}}"><span>{{txt}}</span></a>
+									</li>
+								{{/lnb_d2}}
+							</ul>
+						{{/if}}
+					</li>
+				{{/lnb_d1}}
+			</script>
+		</ul>
+		<!-- //lnb_wrap -->

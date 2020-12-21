@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang='ko'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<!-- og-tag s -->
+	<meta property="og:title" content="(주)아이디알시스템 IDRSYSTEM">
+	<meta property="og:url" content="https://www.url.com">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="컨텐츠내용">
+	<meta property="og:image" content="https://www.url.com/img/img.png">
+	<!-- og-tag e -->
+	<title>(주)아이디알시스템 IDRSYSTEM</title>
+	<link rel="shortcut icon" href="../images/favicon/favicon.ico">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../css/default.css">
+	<link rel="stylesheet" type="text/css" href="../css/display.css">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+
+<!-- wrapper -->
+<div id="wrapper">
+  
+  <!-- container -->
+  <div id="container" class="con_contact contact_intro">
+
+	<script type="text/javascript" src="../js/lnb_data_contact.js"></script>
+		<!-- header -->
+		<header id="header">
+			<h1 class="header_logo"><a href="main.html"><img src="../images/common/logo_idr_top.png" alt="아이디알시스템 로고"></a></h1>
+		<!-- lnb_wrap -->
+		<ul class="lnb_wrap lnb_d1_wrap">
+			<script id="drawLnbNavTmp" type="text/x-handlebars-template">
+				{{#lnb_d1}}
+					<li class="d1_li {{state}}">
+						<a href="{{url}}" data-menu-id="{{num}}"><span>{{txt}}</span></a>
+						{{#if lnb_d2}}
+							<ul class="lnb_d2_wrap">
+								{{#lnb_d2}}
+									<li class="d2_li {{state}}">
+										<a href="{{url}}" data-menu-id="{{num}}"><span>{{txt}}</span></a>
+									</li>
+								{{/lnb_d2}}
+							</ul>
+						{{/if}}
+					</li>
+				{{/lnb_d1}}
+			</script>
+		</ul>
+		<!-- //lnb_wrap -->
+			<button type="button" class="gnb_btn" title="메뉴버튼">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+		</header>
+		<!-- gnb_wrap -->
+		<div class="gnb_wrap">
+			<ul class="gnb_menu">
+				<li><a href="javascript:forWroking()" data-menu-id="gnb_01"><span>service</span></a></li>
+				<li><a href="works_2020_001.html" data-menu-id="gnb_02"><span>work</span></a></li>
+				<li><a href="intro.html" data-menu-id="gnb_03"><span>contact</span></a></li>
+			</ul>
+		</div>
+		<!-- //gnb_wrap -->
+		<!-- //header -->
+
+    <!-- contents | 컨텐츠영역 -->
+    <div id="contents">
+
+	    <!-- intro_box -->
+	    <section class="intro_box">
+		    <div class="inner">
+
+			    <!-- left_bx -->
+			    <div class="left_bx">
+				    <!-- numbers_wrap -->
+				    <ul class="numbers_wrap">
+					    <li>
+						    <span class="nmb_num">10</span>
+						    <span class="nmb_txt">년</span>
+					    </li>
+					    <li>
+						    <span class="nmb_num">3,650</span>
+						    <span class="nmb_txt">개월</span>
+					    </li>
+					    <li>
+						    <span class="nmb_num">1,332,250</span>
+						    <span class="nmb_txt">일</span>
+					    </li>
+					    <li>
+						    <span class="nmb_num">319,740,000</span>
+						    <span class="nmb_txt">시간</span>
+					    </li>
+				    </ul>
+				    <!-- //numbers_wrap -->
+
+				    <div class="txt_wrap">
+					    <p class="tw_1">그냥 만들어진 숫자가 아닙니다.<br>
+						    그만큼 많은 직원들과 함께 전문성와 가치을
+						    만들었기에 가능한 숫자가 되었습니다.</p>
+					    <p class="tw_2">시스템 통합구축에 대한 최고의 전문성과 기술력을 바탕으로 Omni Channel기반의
+						    온.오프라인 고객DB통합 및 옴니채널 커머스 시스템 구축 등 스마트샵 전문기업으로써
+						    끊임없는 기술개발 노력을 진행중입니다.</p>
+				    </div>
+			    </div>
+			    <!-- //left_bx -->
+
+			    <!-- right_bx -->
+			    <div class="right_bx">
+				    <!-- visual_table -->
+				    <table cellpadding="0" cellspacing="0" class="visual_table">
+					    <colgroub>
+						    <col width="50%">
+					    </colgroub>
+					    <tbody>
+					    <tr>
+						    <td colspan="2" class="td_img">
+							    <img class="wif_logo" src="../images/contact/cntc_img_01.png" alt="모래시계 이미지">
+						    </td>
+					    </tr>
+					    <tr>
+						    <td class="td_bg_1 t_lg">
+							   전문성과 기술력을<br>바탕으로 다양한<br>전문기술력
+						    </td>
+						    <td class="td_bg_2 fs13x taC" style="height:212px;">
+							    시스템 구축 등 스마트샵 전문기업으로써 끊임없는<br>기술개발 노력을 진행중입니다.
+						    </td>
+					    </tr>
+					    <tr>
+						    <td class="td_bg_1 t_sm va_b">
+							    IDR은 단지 이윤과 효율을 추구하기<br>
+							    보다는 임직원 들의 행복, 자기 실현,<br>
+							    삶의 가치를 더 우선시하고 있습 니다.
+						    </td>
+						    <td class="td_img">
+							    <img class="wif_logo" src="../images/contact/cntc_img_02.png" alt="하늘 이미지">
+						    </td>
+					    </tr>
+					    </tbody>
+				    </table>
+				    <!-- //visual_table -->
+			    </div>
+			    <!-- //right_bx -->
+
+		    </div>
+	    </section>
+	    <!-- //intro_box -->
+
+    </div>
+    <!-- //contents | 컨텐츠영역 -->
+
+		<!-- sub_footer -->
+		<footer id="footer" class="sub_footer">
+			<div class="inner">
+
+				<div class="ft_info_wrap">
+					<ul class="service_ul">
+						<li>시스템통합</li>
+						<li class="sf">/</li>
+						<li>소프트웨어개발</li>
+						<li class="sf">/</li>
+						<li>정보인프라구축 서비스</li>
+					</ul>
+					<ul class="sep_ul">
+						<li>회사명 : (주)아이디알 시스템</li>
+						<li>대표자 : 송돈섭</li>
+						<li>07205  서울시 영등포구 양평로22길 21 코오롱디지털타워 813호</li>
+						<li class="no_sep">대표번호 : 02-6925-0602</li>
+						<li>사업자번호 : 211-88-45959</li>
+					</ul>
+					<div class="copyright">
+						<p>Copyright@2020 IDR Systems Co.,Ltd.All Rights Reserved.</p>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- //sub_footer -->
+
+  </div>
+  <!-- //container -->
+
+</div>
+<!-- //wrapper -->
+
+<!-- layer_popup_wrap -->
+<div class="lp_wrap lp_depth1"></div>
+<!-- //layer_popup_wrap -->
+
+<!-- script_include -->
+
+<!-- plugin_handlebars -->
+<script type="text/javascript" src="../plugin/handlebars/handlebars-v4.7.6.js"></script>
+<!-- //plugin_handlebars -->
+
+<!-- plugin_swiper -->
+<link rel="stylesheet" type="text/css" href="../plugin/swiper-master/css/swiper.min.css">
+<script type="text/javascript" src="../plugin/swiper-master/js/swiper.min.js"></script>
+<!-- plugin_swiper -->
+
+<script type="text/javascript" src="../js/style.js?v=23"></script>
+
+<!-- //script_include -->
+
+<script>
+(function(){
+    WorksNav.checkCurrentLnbNav("gnb_03","lnb1_01"); //현재 페이지 체크
+    StyleCommon.updateDocTitle('IDR 소개');
+})();
+</script>
+
+</body>
+</html>

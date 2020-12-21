@@ -40,6 +40,22 @@ $header_motion_time:0.4s;
   }
   &.gnb_on {
     background:none;
+    .lnb_d1_wrap,
+    .lnb_d2_wrap {
+      > li {
+        &.on,
+        &:hover {
+          > a {
+            color:#fff;
+          }
+        }
+      }
+    }
+    @include mdq_m {
+      .lnb_d1_wrap {
+        display:block;
+      }
+    }
   }
 }
 .header_logo {

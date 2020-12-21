@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* ========================================================== */
+/*                                                            */
+/* file		: contact                                  	      */
+// writer	: Ryu
+// date		: 20201215
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* contact s ================================================ */
+.con_contact {
+  #contents {
+    padding-top: 200px;
+    @include mdq_m {
+      padding-top: 40px;
+      @include setDfPadding();
+    }
+  }
+}
+
+.intro_box {
+  position:relative;
+  display:inline-block;
+  width:100%;
+  height:100%;
+  .left_bx {
+    float:left;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:50%;
+    height:848px;
+  }
+  .right_bx {
+    float:right;
+    width:50%;
+  }
+  @include mdq_m {
+    .left_bx,
+    .right_bx {
+      width:100%;
+      height:unset;
+    }
+  }
+}
+
+.numbers_wrap {
+  li {
+    line-height:44px;
+  }
+  .nmb_num {
+    font: {
+      family:$fourth_font;
+      size:9.6em;
+    }
+  }
+  .nmb_txt {
+    margin-left:-10px;
+    font: {
+      weight:$l;
+      size:1.7em;
+    }
+    letter-spacing:-1.28px;
+    color:#aaa;
+    vertical-align:text-bottom;
+  }
+  @include mdq_m {
+    .nmb_num {
+      font-size:5.4em;
+    }
+    .nmb_txt {
+      margin-left:0;
+      vertical-align:super;
+    }
+  }
+}
+
+.txt_wrap {
+  max-width:450px;
+  .tw_1 {
+    padding-bottom:30px;
+    @include fnt_set($l, 2.7em, 35px, -2.03px);
+  }
+  .tw_2 {
+    padding-bottom:30px;
+    @include fnt_set($l, 1.5em, 21px, -1.13px);
+  }
+  @include mdq_m {
+    padding-top:40px;
+  }
+}
+
+.contact_history {
+  #contents {
+    padding-top:160px;
+    padding-bottom:140px !important;
+    background:url(#{$img_url}contact/cntc_img_03.png);
+    background-repeat:repeat-y;
+    background-size:286px;
+    background-position:50% 0;
+    @include mdq_m {
+      padding-top:0px;
+      background:none;
+    }
+  }
+}
+
+.history_box {
+  li {
+    margin-top:-10px;
+  }
+  .side_l {
+    .hist_item {
+      padding-right:64%;
+      text-align:right;
+    }
+  }
+  .side_r {
+    .hist_item {
+      padding-left:64%;
+    }
+  }
+  .hist_item {
+    .year {
+      display:inline-block;
+      margin-bottom:10px;
+      font: {
+        family:$fourth_font;
+        size:5.2em;
+      }
+    }
+    .desc_line {
+      @include fnt_set($l, 1.5em, 24px, -1.13px);
+      b {
+        font-weight:$b;
+      }
+    }
+  }
+  @include mdq_m {
+    li {
+      margin-top:40px;
+      &.side_l,
+      &.side_r {
+        .hist_item {
+          padding-right: 0;
+          padding-left: 0;
+          text-align:left;
+        }
+      }
+    }
+  }
+}
+
+.recruit_box {
+  .line_bx_wrap {
+    margin-top:120px;
+    &:first-child {
+      margin-top:0;
+    }
+    .line_bx {
+      .txt_desc {
+        padding-left: 64px;
+        padding-right: 64px;
+        @include mdq_m {
+          @include setDfPadding();
+        }
+      }
+    }
+  }
+  .line_bx_02 {
+    .rect_ul {
+      margin-top:40px;
+      @include mdq_m {
+        flex-wrap:wrap;
+        li {
+          margin-top:40px;
+          width:100%;
+          padding:0 10px;
+        }
+      }
+    }
+  }
+  .line_bx_03 {
+    .rect_ul {
+      margin-top:60px;
+      @include mdq_m {
+        flex-wrap:wrap;
+        margin-top:20px;
+        li {
+          margin-top:40px;
+          width:100%;
+        }
+      }
+    }
+  }
+  .line_bx_04 {
+    .ex_subject_wrap {
+      margin-top:45px;
+      p {
+        padding:35px 30px;
+        @include fnt_set($l, 25px, unset, -1.88px);
+        border: 1px solid #000;
+        background: #f7f6f6;
+        small {
+          font-size:17px;
+        }
+        b {
+          font-weight:$b;
+          font-size:15px;
+        }
+      }
+    }
+    .number_ul {
+      margin-top:20px;
+      display:flex;
+      justify-content:space-around;
+      @include mdq_m {
+        flex-wrap:wrap;
+        @include setDfPadding();
+      }
+      li {
+        width:33.33%;
+        @include mdq_m {
+          width:100%;
+        }
+      }
+      .number_con {
+        @include fnt_set($r,1.9em,24px,-1.43px);
+        span {
+          display:block;
+          padding-top:20px;
+          font-size:15px;
+        }
+      }
+    }
+  }
+}
+/* contact e ================================================ */
+/* ---------------------------------------------------------- */
