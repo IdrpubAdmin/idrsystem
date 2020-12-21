@@ -254,23 +254,29 @@
 
 .biz_box .sec_tit { position: absolute; top: 190px; left: 30px; }
 
-.biz_box .biz_item .visual_img { display: inline-block; max-width: 705px; }
+.biz_box .biz_item { padding-top: 470px; text-align: right; }
 
-.biz_box .biz_item .sub_tit { font-weight: 300; font-size: 4.1em; line-height: 54px; letter-spacing: unset; }
+.biz_box .biz_item .visual_img { position: absolute; top: 0; right: 0; display: inline-block; width: auto; }
 
-.biz_box .biz_item_01 { text-align: right; }
+.biz_box .biz_item .sub_tit { font-weight: 300; font-size: 4.1em; line-height: 54px; letter-spacing: unset; margin-bottom: 65px; }
 
-.biz_box .biz_item_01 .visual_img { margin-bottom: 58px; }
+.biz_box .biz_item .desc_box { margin-bottom: 65px; }
 
-.biz_box .biz_item_01 .sub_tit { margin-bottom: 65px; }
+.biz_box .biz_item .desc_box p { display: inline-block; max-width: 500px; margin-left: 56px; text-align: left; }
 
-.biz_box .biz_item_01 .desc_box { margin-bottom: 65px; }
+.biz_box .biz_item_01 .sub_tit { margin-bottom: 30px; }
 
-.biz_box .biz_item_01 .desc_box p { display: inline-block; max-width: 500px; margin-left: 56px; text-align: left; }
+.biz_box .biz_item_01 .sub_tit span { display: inline-block; font-weight: 300; font-size: 37px; line-height: 42px; }
+
+.biz_box .biz_item_01 .desc_box p { text-align: right; }
+
+.biz_box .biz_item_03 .sub_tit { font-weight: 300; font-size: 37px; letter-spacing: -2.78px; line-height: 40px; }
+
+.biz_box .biz_item_03 .desc_box { margin-bottom: 75px; }
 
 .biz_box .swiper-container { width: 100%; }
 
-.biz_box div.swiper-pagination { bottom: 465px; }
+.biz_box div.swiper-pagination { top: 240px; bottom: unset; }
 
 .biz_box span.swiper-pagination-bullet { position: relative; width: 100%; height: 46px; text-align: left; line-height: 20px; font-size: 12px; color: #000; opacity: 1; background: none; }
 
@@ -306,19 +312,76 @@
 
 .portfolio_box ul > li a .ptfl_item { position: relative; width: 100%; }
 
-.portfolio_box ul > li a .ptfl_item .ptfl_info { display: flex; position: absolute; top: 0; left: 0; padding: 42px 32px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); align-content: flex-end; flex-wrap: wrap; opacity: 0; transition: opacity 0.6s; }
+.portfolio_box ul > li a .ptfl_item .ptfl_info { display: flex; position: absolute; top: 0; left: 0; padding: 42px 32px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.74); align-content: flex-start; flex-wrap: wrap; opacity: 0; transition: opacity 0.6s; }
 
 .portfolio_box ul > li a .ptfl_item .ptfl_info p[class*="tit"] { display: block; width: 100%; color: #fff; }
 
-.portfolio_box ul > li a .ptfl_item .ptfl_info .tit_sub { font-weight: 300; font-size: 2.5em; letter-spacing: -1.88px; line-height: 30px; }
+.portfolio_box ul > li a .ptfl_item .ptfl_info .tit_date { font-weight: 700; font-size: 1.7em; line-height: 37px; letter-spacing: unset; margin-bottom: 53px; }
 
-.portfolio_box ul > li a .ptfl_item .ptfl_info .tit { margin-top: 12px; font-weight: 300; font-size: 3.1em; letter-spacing: -2.33px; line-height: 36px; }
+.portfolio_box ul > li a .ptfl_item .ptfl_info .tit { min-height: 108px; font-weight: 400; font-size: 3.1em; letter-spacing: -2.33px; line-height: 36px; }
 
-.portfolio_box ul > li a .ptfl_item .ptfl_info .tit_desc { margin-top: 16px; font-weight: 700; font-size: 1.4em; letter-spacing: -1.05px; line-height: 18px; }
+.portfolio_box ul > li a .ptfl_item .ptfl_info .tit_sub { font-weight: 300; }
+
+.portfolio_box ul > li a .ptfl_item .ptfl_info .tit_desc { margin-top: 55px; font-weight: 400; font-size: 19px; letter-spacing: -1.43px; line-height: 22px; }
 
 .portfolio_box ul > li.on a .ptfl_info, .portfolio_box ul > li:hover a .ptfl_info { opacity: 1; }
 
 /* main e =================================================== */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: service                                  	      */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* service s ================================================ */
+.con_service #contents { padding-top: 200px; }
+
+@media (max-width: 736px) { .con_service #contents { padding-top: 40px; padding-right: 15px; padding-left: 15px; } }
+
+/* service e ================================================ */
+/* ---------------------------------------------------------- */
+/* ========================================================== */
+/*                                                            */
+/* file		: works                                   	      */
+/*                                                            */
+/* ========================================================== */
+/* ---------------------------------------------------------- */
+/* works s ================================================= */
+.works_box { position: relative; width: 100%; height: 100%; }
+
+.works_box .works_img_wrap { display: flex; justify-content: center; width: 100%; overflow-x: hidden; }
+
+.works_box .works_info_wrap { position: absolute; top: 257px; left: 50%; margin-left: -640px; }
+
+.works_box .works_info_wrap .wif_date { font-weight: 800; font-size: 1.6em; line-height: unset; letter-spacing: -0.32px; }
+
+.works_box .works_info_wrap .wif_logo { margin-top: 12px; }
+
+.works_box .works_info_wrap .wif_subject { margin-top: 18px; font-weight: 300; font-size: 3.5em; line-height: 48px; letter-spacing: -2.63px; }
+
+.works_box .works_info_wrap .wif_detail { margin-top: 100px; }
+
+.works_box .works_info_wrap .wif_detail .wifd_tit { font-weight: 700; font-size: 1.5em; line-height: unset; letter-spacing: -1.13px; }
+
+.works_box .works_info_wrap .wif_detail .wifd_con { margin-top: 24px; font-weight: 700; font-size: 1.5em; line-height: 22px; letter-spacing: unset; }
+
+@media (max-width: 736px) { .works_box .works_info_wrap { position: relative; top: unset; left: unset; margin-left: unset; padding-top: 30px; padding-right: 15px; padding-left: 15px; }
+  .works_box .works_info_wrap .wif_subject { font-size: 28px; }
+  .works_box .works_info_wrap .wif_detail { margin-top: 50px; } }
+
+.works_001 .works_img_wrap img { margin-top: 18px; margin-left: 640px; width: 1035px; }
+
+@media (max-width: 736px) { .works_001 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; width: 100%; } }
+
+.works_002 .works_img_wrap { background: url(../images/works/glyde/works_img_bg.png) no-repeat; background-size: 1920px; background-position: 50% 0; }
+
+.works_002 .works_img_wrap img { margin-top: 80px; margin-left: 640px; width: 251px; }
+
+@media (max-width: 736px) { .works_002 .works_img_wrap { background: none; }
+  .works_002 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-right: 20px; padding-left: 20px; width: 100%; } }
+
+/* works e ================================================= */
 /* ---------------------------------------------------------- */
 /* ========================================================== */
 /*                                                            */
@@ -414,48 +477,6 @@
 .recruit_box .line_bx_04 .number_ul .number_con span { display: block; padding-top: 20px; font-size: 15px; }
 
 /* contact e ================================================ */
-/* ---------------------------------------------------------- */
-/* ========================================================== */
-/*                                                            */
-/* file		: works                                   	      */
-/*                                                            */
-/* ========================================================== */
-/* ---------------------------------------------------------- */
-/* works s ================================================= */
-.works_box { position: relative; width: 100%; height: 100%; }
-
-.works_box .works_img_wrap { display: flex; justify-content: center; width: 100%; overflow-x: hidden; }
-
-.works_box .works_info_wrap { position: absolute; top: 257px; left: 50%; margin-left: -640px; }
-
-.works_box .works_info_wrap .wif_date { font-weight: 800; font-size: 1.6em; line-height: unset; letter-spacing: -0.32px; }
-
-.works_box .works_info_wrap .wif_logo { margin-top: 12px; }
-
-.works_box .works_info_wrap .wif_subject { margin-top: 18px; font-weight: 300; font-size: 3.5em; line-height: 48px; letter-spacing: -2.63px; }
-
-.works_box .works_info_wrap .wif_detail { margin-top: 100px; }
-
-.works_box .works_info_wrap .wif_detail .wifd_tit { font-weight: 700; font-size: 1.5em; line-height: unset; letter-spacing: -1.13px; }
-
-.works_box .works_info_wrap .wif_detail .wifd_con { margin-top: 24px; font-weight: 700; font-size: 1.5em; line-height: 22px; letter-spacing: unset; }
-
-@media (max-width: 736px) { .works_box .works_info_wrap { position: relative; top: unset; left: unset; margin-left: unset; padding-top: 30px; padding-right: 15px; padding-left: 15px; }
-  .works_box .works_info_wrap .wif_subject { font-size: 28px; }
-  .works_box .works_info_wrap .wif_detail { margin-top: 50px; } }
-
-.works_001 .works_img_wrap img { margin-top: 18px; margin-left: 640px; width: 1035px; }
-
-@media (max-width: 736px) { .works_001 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; width: 100%; } }
-
-.works_002 .works_img_wrap { background: url(../images/works/glyde/works_img_bg.png) no-repeat; background-size: 1920px; background-position: 50% 0; }
-
-.works_002 .works_img_wrap img { margin-top: 80px; margin-left: 640px; width: 251px; }
-
-@media (max-width: 736px) { .works_002 .works_img_wrap { background: none; }
-  .works_002 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-right: 20px; padding-left: 20px; width: 100%; } }
-
-/* works e ================================================= */
 /* ---------------------------------------------------------- */
 /* ========================================================== */
 /*                                                            */

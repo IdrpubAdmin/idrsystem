@@ -29,24 +29,19 @@
     @include posa_tl(190px,30px);
   }
   .biz_item {
+    padding-top:470px;
+    text-align:right;
     .visual_img {
+      @include posa_tr();
       display:inline-block;
-      max-width:705px;
+      width:auto;
     }
     .sub_tit {
       @include fnt_set($l, 4.1em, 54px);
-    }
-  }
-  .biz_item_01 {
-    text-align:right;
-    .visual_img {
-      margin-bottom:58px;
-    }
-    .sub_tit {
       margin-bottom:65px;
     }
     .desc_box {
-      margin-bottom:65px;
+      margin-bottom: 65px;
       p {
         display:inline-block;
         max-width:500px;
@@ -55,11 +50,40 @@
       }
     }
   }
+  .biz_item_01 {
+    .sub_tit {
+      margin-bottom:30px;
+      span {
+        display:inline-block;
+        font-weight:$l;
+        font-size:37px;
+        line-height:42px;
+      }
+    }
+    .desc_box {
+      p {
+        text-align:right;
+      }
+    }
+  }
+  .biz_item_03 {
+    .sub_tit {
+      font-weight:$l;
+      font-size:37px;
+      letter-spacing:-2.78px;
+      line-height:40px;
+    }
+    .desc_box {
+      margin-bottom: 75px;
+    }
+  }
   .swiper-container {
     width: 100%;
   }
   div.swiper-pagination {
-    bottom:465px;
+    top:240px;
+    bottom:unset;
+    //bottom:465px;
   }
   span.swiper-pagination-bullet {
     position:relative;
@@ -168,8 +192,8 @@
             padding:42px 32px;
             width:100%;
             height:100%;
-            background:rgba(0,0,0,0.5);
-            align-content:flex-end;
+            background:rgba(0,0,0,0.74);
+            align-content:flex-start;
             flex-wrap:wrap;
             opacity:0;
             transition:opacity 0.6s;
@@ -178,25 +202,26 @@
               width:100%;
               color:#fff;
             }
-            .tit_sub {
-              font-weight:$l;
-              font-size:2.5em;
-              letter-spacing:-1.88px;
-              line-height:30px;
+            .tit_date {
+              @include fnt_set($b,1.7em,37px,unset);
+              margin-bottom:53px;
             }
             .tit {
-              margin-top:12px;
-              font-weight:$l;
+              min-height:108px;
+              font-weight:$r;
               font-size:3.1em;
               letter-spacing:-2.33px;
               line-height:36px;
             }
+            .tit_sub {
+              font-weight:$l;
+            }
             .tit_desc {
-              margin-top:16px;
-              font-weight:$b;
-              font-size:1.4em;
-              letter-spacing:-1.05px;
-              line-height:18px;
+              margin-top:55px;
+              font-weight:$r;
+              font-size:19px;
+              letter-spacing:-1.43px;
+              line-height:22px;
             }
           }
         }
