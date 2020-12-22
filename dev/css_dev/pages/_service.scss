@@ -12,13 +12,34 @@
   #contents {
     padding-top: 200px;
     @include mdq_m {
-      padding-top: 40px;
+      padding-top:0;
       @include setDfPadding();
     }
   }
 }
-
+.sub_bg_wrap {
+  max-width:$full;
+  margin-bottom:95px;
+  margin-right:auto;
+  margin-left:auto;
+  @include mdq_m {
+    margin-bottom:40px;
+    @include setFullBox();
+  }
+}
 .commerce_box {
+  .txt_wrap {
+    width:100%;
+    .tw_2 {
+      padding-bottom:0;
+      line-height:30px;
+    }
+  }
+}
+.marketing_box {
+
+}
+.design_box {
 
 }
 /* service e ================================================ */

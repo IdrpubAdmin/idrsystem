@@ -75,21 +75,6 @@
   }
 }
 
-.txt_wrap {
-  max-width:450px;
-  .tw_1 {
-    padding-bottom:30px;
-    @include fnt_set($l, 2.7em, 35px, -2.03px);
-  }
-  .tw_2 {
-    padding-bottom:30px;
-    @include fnt_set($l, 1.5em, 21px, -1.13px);
-  }
-  @include mdq_m {
-    padding-top:40px;
-  }
-}
-
 .contact_history {
   #contents {
     padding-top:160px;
@@ -106,6 +91,9 @@
 }
 
 .history_box {
+  .txt_wrap {
+    max-width:450px;
+  }
   li {
     margin-top:-10px;
   }

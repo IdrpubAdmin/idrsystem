@@ -8,6 +8,15 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* works s ================================================= */
+.con_works {
+  .lnb_d1_wrap {
+    li,
+    a {
+      float:none;
+    }
+  }
+}
+
 .works_box {
   position:relative;
   width:100%;
@@ -23,7 +32,7 @@
   }
   .works_info_wrap {
     @include posa_tl(257px,50%);
-    margin-left:-($max_w / 2);
+    margin-left:-(($max_w / 2) - 20px);
     .wif_date {
       @include fnt_set($eb,1.6em,unset,-0.32px);
     }

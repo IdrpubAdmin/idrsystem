@@ -23,6 +23,12 @@
       height:3px;
       background:#000;
     }
+    &.no_dot {
+      padding-left:0;
+      &:before {
+        display:none;
+      }
+    }
   }
 }
 .sep_ul {
@@ -34,7 +40,7 @@
     font-size: 1.5em;
     line-height: 22px;
     letter-spacing: -1.13px;
-    background:url(#{$img_url}/common/bg_gubun.png) no-repeat 0 50%;
+    background:url(#{$img_url}common/bg_gubun.png) no-repeat 0 50%;
     &:first-child,
     &.no_sep {
       margin-left:0;

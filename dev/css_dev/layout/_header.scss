@@ -19,12 +19,15 @@ $header_motion_time:0.4s;
   padding-bottom:20px;
   @include posft();
   width:100%;
-  height:$header_h;
+
+  text-align:center;
   z-index:10;
   @include transition(padding-top, $header_motion_time);
   @include mdq_m {
     padding-top:$header_padding-top2;
+    height:$header_h;
     background:#fff;
+    .header_logo,
     .gnb_btn {
       top:$header_padding-top2;
     }
@@ -34,12 +37,13 @@ $header_motion_time:0.4s;
     @include mdq_custom {
       background:#fff;
     }
+    .header_logo,
     .gnb_btn {
       top:$header_padding-top2;
     }
   }
   &.gnb_on {
-    background:none;
+    background:none !important;
     .lnb_d1_wrap,
     .lnb_d2_wrap {
       > li {
@@ -58,7 +62,14 @@ $header_motion_time:0.4s;
     }
   }
 }
+.has_wnd_nav {
+  #header.fixed {
+    background:#fff;
+  }
+}
 .header_logo {
+  @include posa_tl($header_padding-top,$header_padding);
+  @include transition(top, $header_motion_time);
   display:inline-block;
   width:103px;
   cursor:pointer;

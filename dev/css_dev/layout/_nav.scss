@@ -10,7 +10,7 @@
 /* nav s ==================================================== */
 .gnb_wrap {
   display:none;
-  @include posf();
+  @include posft();
   width:100%;
   height:100vh;
   background:rgba(0,0,0,0.86);
@@ -31,7 +31,7 @@
     padding-top:100px;
     padding-bottom:100px;
     &.has_wnd_nav {
-      padding-top:240px;
+      padding-top:270px;
     }
   }
   a {
@@ -73,15 +73,26 @@
 
 .lnb_d1_wrap {
   display:inline-block;
-  margin-left:120px;
+  width:$max_w;
+  text-align:left;
+  //margin-left:120px;
+  @include mdq_custom {
+    padding-left:120px;
+  }
   @include mdq_m {
     display:none;
-    margin-top:40px;
+    margin-top:70px;
     margin-left:0;
+    padding-left:0;
+    width:100%;
   }
   li, a {
     position:relative;
     display:inline-block;
+    @include mdq_m {
+      float:left;
+      clear:both;
+    }
   }
   > li {
     > a {
