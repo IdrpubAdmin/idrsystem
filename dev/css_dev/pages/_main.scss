@@ -25,6 +25,9 @@
 .biz_box {
   position:relative;
   margin-bottom:116px;
+  @include mdq_m {
+    margin-bottom:60px;
+  }
   .sec_tit {
     @include posa_tl(190px,30px);
     @include mdq_m {
@@ -54,11 +57,18 @@
       }
     }
     @include mdq_m {
+      position:relative;
+      margin-top:200px;
       padding-top:240px;
       @include setDfPadding();
       .sub_tit {
         margin-bottom:25px;
-        font-size:3em;
+        font-size:2.4em !important;
+        line-height:27px !important;
+        span {
+          font-size:24px !important;
+          line-height:24px !important;
+        }
       }
     }
   }
@@ -216,6 +226,9 @@
     flex-wrap:wrap;
     > li {
       width:33.33%;
+      @include mdq_m {
+        width:50%;
+      }
       a {
         .ptfl_item {
           position: relative;
@@ -257,6 +270,19 @@
               letter-spacing:-1.43px;
               line-height:22px;
             }
+            @include mdq_m {
+              padding:10px 15px;
+              .tit_date {
+                margin-bottom:10px;
+                font-size:1.2em;
+              }
+              .tit {
+                font-size:2em;
+              }
+              .tit_desc {
+                display:none !important;
+              }
+            }
           }
         }
       }
@@ -264,7 +290,6 @@
       &:hover {
         a {
           .ptfl_info {
-
             opacity:1;
           }
         }
