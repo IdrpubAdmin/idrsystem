@@ -27,6 +27,10 @@
   margin-bottom:116px;
   .sec_tit {
     @include posa_tl(190px,30px);
+    @include mdq_m {
+      top:20px;
+      left:24px;
+    }
   }
   .biz_item {
     padding-top:470px;
@@ -47,6 +51,14 @@
         max-width:500px;
         margin-left: 56px;
         text-align:left;
+      }
+    }
+    @include mdq_m {
+      padding-top:240px;
+      @include setDfPadding();
+      .sub_tit {
+        margin-bottom:25px;
+        font-size:3em;
       }
     }
   }
@@ -84,6 +96,9 @@
     top:240px;
     bottom:unset;
     //bottom:465px;
+    @include mdq_m {
+      top:50px;
+    }
   }
   span.swiper-pagination-bullet {
     position:relative;
@@ -144,6 +159,9 @@
       &:nth-child(1) {
         &:before {
           width:370px;
+          @include mdq_m {
+            width:230px;
+          }
         }
         &:after {
           content: "01. e-Commerce";
@@ -152,6 +170,9 @@
       &:nth-child(2) {
         &:before {
           width:520px;
+          @include mdq_m {
+            width:320px;
+          }
         }
         &:after {
           content: "02. AI Marketing Curator";
@@ -160,9 +181,22 @@
       &:nth-child(3) {
         &:before {
           width:370px;
+          @include mdq_m {
+            width:230px;
+          }
         }
         &:after {
           content: "03. UI/UX Design";
+        }
+      }
+    }
+    @include mdq_m {
+      &:after {
+        font-size:18px;
+      }
+      &.swiper-pagination-bullet-active {
+        &:after {
+          font-size:24px;
         }
       }
     }

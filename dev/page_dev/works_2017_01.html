@@ -1,0 +1,81 @@
+<!-- @@master ../layout_template.html -->
+
+<!-- @@block root_content -->
+<!-- wrapper -->
+<div id="wrapper">
+  
+  <!-- container -->
+  <div id="container" class="con_works works_2017_01">
+
+	  <script type="text/javascript" src="../js/lnb_data_works.js"></script>
+	  <!-- @@include ../page_include/header_lnb.html -->
+
+    <!-- contents | 컨텐츠영역 -->
+    <div id="contents">
+
+	    <!-- works_box -->
+	    <section class="works_box">
+
+		    <!-- works_img_wrap -->
+		    <div class="works_img_wrap">
+				<img src="../images/works/civilpension/works_img.png" alt="사이트이미지">
+			</div>
+		    <!-- //works_img_wrap -->
+
+		    <!-- works_info_wrap -->
+		    <div class="works_info_wrap">
+			    <p class="wif_date">2017.08 ~ 2017.11</p>
+			    <img class="wif_logo" src="../images/works/civilpension/works_logo.png" alt="로고" style="width:64px;">
+			    <p class="wif_subject">
+				    공무원연금공단<br>제휴복지몰
+			    </p>
+			    <div class="wif_detail">
+				    <p class="wifd_tit">제휴복지몰 구축 </p>
+				    <p class="wifd_con">Front</p>
+				    <ul class="wifd_con">
+					    <li>메인 디자인 및 메뉴체계 개선</li>
+					    <li>반응형 시스템 구현(PC/Mobile)</li>
+					    <li>PC,Mobile 기기별로 다른 컨텐츠를 노출할 수 있도록 구성</li>
+				    </ul>
+
+				    <p class="wifd_con">Admin</p>
+				    <ul class="wifd_con">
+					    <li>제휴업체 및 제휴카드 매출실적관리 구축</li>
+					    <li>실시간으로 메뉴구조를 변경할 수 있도록  메뉴관리 기능 추가</li>
+					    <li>배너별 단가관리 기능 구축</li>
+				    </ul>
+
+				    <p class="wifd_con">제휴업체 SSO 연동</p>
+				    <ul class="wifd_con">
+					    <li>100여개의 제휴업체와 로그인 연동을 할 수 있도록 구현</li>
+					    <li>제휴업체의 개발언어에 따라 다른 연동모듈 제공</li>
+				    </ul>
+			    </div>
+		    </div>
+		    <!-- //works_info_wrap -->
+
+	    </section>
+	    <!-- works_box -->
+
+    </div>
+    <!-- //contents | 컨텐츠영역 -->
+
+	  <!-- @@include ../page_include/footer_works.html -->
+
+  </div>
+  <!-- //container -->
+
+</div>
+<!-- //wrapper -->
+
+<!-- @@include ../page_include/lp_wrap.html -->
+
+<!-- @@include ../page_include/script_include.html -->
+
+<script>
+(function(){
+    WorksNav.checkCurrentLnbNav("gnb_02","lnb1_17","lnb2_01"); //현재 페이지 체크
+    StyleCommon.updateDocTitle('공무원연금공단 제휴복지몰 구축');
+})();
+</script>
+<!-- @@close -->

@@ -1,5 +1,6 @@
 const autoprefixer = require('autoprefixer');
 const gulp = require('gulp');
+const babel = require("gulp-babel");
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
@@ -41,10 +42,21 @@ gulp.task('extend', function () {
 	.pipe(gulp.dest('../page/'));
 });
 
+gulp.task('babel', function () {
+	return gulp.src('js_dev/*.js')
+		.pipe(babel({
+			//presets: ["@babel/preset-env"]
+			presets: ["@babel/preset-env", "@babel/preset-react"]
+		}))
+		.pipe(plumber())
+		.pipe(gulp.dest('../js/'));
+});
+
 gulp.task('watch', function() {
 	gulp.watch('css_dev/**/*.scss', gulp.series('sass')),
 	gulp.watch('page_dev/**/*.html', gulp.series('extend'));
 	gulp.watch('page_include/**/*.html', gulp.series('extend'));
+	gulp.watch('js_dev/*.js', gulp.series('babel'));
 });
 
 gulp.task('default',gulp.parallel(['watch']));

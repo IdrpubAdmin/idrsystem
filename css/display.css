@@ -316,6 +316,8 @@
 
 .biz_box .sec_tit { position: absolute; top: 190px; left: 30px; }
 
+@media (max-width: 736px) { .biz_box .sec_tit { top: 20px; left: 24px; } }
+
 .biz_box .biz_item { padding-top: 470px; text-align: right; }
 
 .biz_box .biz_item .visual_img { position: absolute; top: 0; right: 0; display: inline-block; width: auto; }
@@ -325,6 +327,9 @@
 .biz_box .biz_item .desc_box { margin-bottom: 65px; }
 
 .biz_box .biz_item .desc_box p { display: inline-block; max-width: 500px; margin-left: 56px; text-align: left; }
+
+@media (max-width: 736px) { .biz_box .biz_item { padding-top: 240px; padding-right: 15px; padding-left: 15px; }
+  .biz_box .biz_item .sub_tit { margin-bottom: 25px; font-size: 3em; } }
 
 .biz_box .biz_item_01 .sub_tit { margin-bottom: 30px; }
 
@@ -339,6 +344,8 @@
 .biz_box .swiper-container { width: 100%; }
 
 .biz_box div.swiper-pagination { top: 240px; bottom: unset; }
+
+@media (max-width: 736px) { .biz_box div.swiper-pagination { top: 50px; } }
 
 .biz_box span.swiper-pagination-bullet { position: relative; width: 100%; height: 46px; text-align: left; line-height: 20px; font-size: 12px; color: #000; opacity: 1; background: none; }
 
@@ -356,15 +363,24 @@
 
 .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:nth-child(1):before { width: 370px; }
 
+@media (max-width: 736px) { .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:nth-child(1):before { width: 230px; } }
+
 .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:nth-child(1):after { content: "01. e-Commerce"; }
 
 .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:nth-child(2):before { width: 520px; }
+
+@media (max-width: 736px) { .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:nth-child(2):before { width: 320px; } }
 
 .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:nth-child(2):after { content: "02. AI Marketing Curator"; }
 
 .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:nth-child(3):before { width: 370px; }
 
+@media (max-width: 736px) { .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:nth-child(3):before { width: 230px; } }
+
 .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:nth-child(3):after { content: "03. UI/UX Design"; }
+
+@media (max-width: 736px) { .biz_box span.swiper-pagination-bullet:after { font-size: 18px; }
+  .biz_box span.swiper-pagination-bullet.swiper-pagination-bullet-active:after { font-size: 24px; } }
 
 .biz_box .swiper-pagination-bullet-active { color: #fff; background: #007aff; }
 
@@ -438,20 +454,76 @@
 
 .works_box .works_info_wrap .wif_detail .wifd_con { margin-top: 24px; font-weight: 700; font-size: 1.5em; line-height: 22px; letter-spacing: unset; }
 
+.works_box .works_info_wrap .wif_detail .wifd_con + .wifd_con { margin-top: 5px; }
+
+.works_box .works_info_wrap .wif_detail .wifd_con li { position: relative; padding-left: 14px; padding-bottom: 6px; }
+
+.works_box .works_info_wrap .wif_detail .wifd_con li:before { content: '-'; display: inline-block; width: 10px; height: 10px; position: absolute; top: 0; left: 0; }
+
 @media (max-width: 736px) { .works_box .works_info_wrap { position: relative; top: unset; left: unset; margin-left: unset; padding-top: 30px; padding-right: 15px; padding-left: 15px; }
   .works_box .works_info_wrap .wif_subject { font-size: 28px; }
   .works_box .works_info_wrap .wif_detail { margin-top: 50px; } }
 
-.works_001 .works_img_wrap img { margin-top: 18px; margin-left: 640px; width: 1035px; }
+.works_2015_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 120px; margin-left: 640px; width: 850px; }
 
-@media (max-width: 736px) { .works_001 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2015_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
 
-.works_002 .works_img_wrap { background: url(../images/works/glyde/works_img_bg.png) no-repeat; background-size: 1920px; background-position: 50% 0; }
+.works_2015_02 .works_img_wrap img { margin-top: 190px; margin-bottom: 210px; margin-left: 840px; width: 926px; }
 
-.works_002 .works_img_wrap img { margin-top: 80px; margin-left: 640px; width: 251px; }
+@media (max-width: 736px) { .works_2015_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
 
-@media (max-width: 736px) { .works_002 .works_img_wrap { background: none; }
-  .works_002 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-right: 20px; padding-left: 20px; width: 100%; } }
+.works_2015_03 #contents { padding-bottom: 0 !important; }
+
+.works_2015_03 .works_img_wrap img { margin-top: 0; margin-left: auto; width: 960px; }
+
+@media (max-width: 736px) { .works_2015_03 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+.works_2016_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 140px; margin-left: 740px; width: 503px; }
+
+@media (max-width: 736px) { .works_2016_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+.works_2016_02 .works_img_wrap img { margin-top: 170px; margin-bottom: 35px; margin-left: 740px; width: 679px; }
+
+@media (max-width: 736px) { .works_2016_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+.works_2016_03 .works_img_wrap img { margin-top: 170px; margin-bottom: 45px; margin-left: 740px; width: 864px; }
+
+@media (max-width: 736px) { .works_2016_03 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+.works_2017_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 100px; margin-left: 640px; width: 374px; }
+
+@media (max-width: 736px) { .works_2017_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+.works_2017_02 .works_img_wrap img { margin-top: 260px; margin-bottom: 180px; margin-left: 840px; width: 711px; }
+
+@media (max-width: 736px) { .works_2017_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+.works_2019_01 #contents { padding-bottom: 0 !important; }
+
+.works_2019_01 .works_img_wrap img { margin-top: 160px; margin-left: 640px; width: 869px; }
+
+@media (max-width: 736px) { .works_2019_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+.works_2019_02 #contents { padding-bottom: 0 !important; }
+
+@media (max-width: 736px) { .works_2019_02 #contents { padding-bottom: 80px !important; } }
+
+@media (max-width: 736px) { .works_2019_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+.works_2019_03 .works_img_wrap img { margin-top: 160px; margin-bottom: 120px; margin-left: 640px; width: 1087px; }
+
+@media (max-width: 736px) { .works_2019_03 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+.works_2020_01 .works_img_wrap { background: url(../images/works/glyde/works_img_bg.png) no-repeat; background-size: 1920px; background-position: 50% 0; }
+
+.works_2020_01 .works_img_wrap img { margin-top: 80px; margin-left: 640px; width: 251px; }
+
+@media (max-width: 736px) { .works_2020_01 .works_img_wrap { background: none; }
+  .works_2020_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-right: 20px; padding-left: 20px; width: 100%; } }
+
+.works_2020_02 .works_img_wrap img { margin-top: 18px; margin-left: 640px; width: 1035px; }
+
+@media (max-width: 736px) { .works_2020_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; width: 100%; } }
 
 /* works e ================================================= */
 /* ---------------------------------------------------------- */

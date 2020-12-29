@@ -10,11 +10,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.12.10",
     "autoprefixer": "^10.0.2",
     "browserslist": [
       "last 2 versions"
     ],
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-html-extend": "^1.1.6",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
@@ -31,6 +37,7 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "npm": "^7.0.11",
     "vue": "^2.6.11",
     "vue-loader": "^15.8.3",
