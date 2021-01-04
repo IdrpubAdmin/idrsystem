@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ========================================================== */
 /*                                                            */
 /* file		: button                                       	  */
@@ -507,6 +508,11 @@
 .works_2017_02 .works_img_wrap img { margin-top: 260px; margin-bottom: 180px; margin-left: 840px; width: 711px; }
 
 @media (max-width: 736px) { .works_2017_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+
+/* 21.01.04 추가 */
+.works_2018_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 100px; margin-left: 640px; width: 374px; }
+
+@media (max-width: 736px) { .works_2018_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
 
 .works_2019_01 #contents { padding-bottom: 0 !important; }
 

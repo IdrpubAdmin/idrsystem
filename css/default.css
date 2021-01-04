@@ -2412,6 +2412,8 @@ img { width: 100%; }
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* footer s ================================================= */
+.main_footer { background-color: yellow; }
+
 .main_footer .ft_num_wrap { display: flex; justify-content: space-between; }
 
 .main_footer .ft_num { width: 32%; }
