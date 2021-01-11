@@ -8,6 +8,7 @@ const lnbInfoData = {
             lnb_d2:[
                 {num:"lnb2_01", txt:"1", url:"works_2020_01.html", state:""},
                 {num:"lnb2_02", txt:"2", url:"works_2020_02.html", state:""},
+                {num:"lnb2_03", txt:"3", url:"works_2020_03.html", state:""},
             ]
         },
         { num:"lnb1_19", txt:"2019", url:"works_2019_01.html", state:"",

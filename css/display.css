@@ -541,6 +541,22 @@
 
 @media (max-width: 736px) { .works_2020_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; width: 100%; } }
 
+.works_2020_03 #contents { padding-bottom: 0 !important; }
+
+@media (max-width: 736px) { .works_2020_03 #contents { padding-bottom: 80px !important; } }
+
+.works_2020_03 .works_box { height: 100vh; background: url(../images/works/hyundai_greating/works_img_bg.png) no-repeat; background-size: cover; }
+
+@media (max-width: 736px) { .works_2020_03 .works_box { height: unset; background: none; } }
+
+.works_2020_03 .works_img_wrap img { margin-top: 220px; margin-left: 640px; width: 340px; }
+
+@media (max-width: 736px) { .works_2020_03 .works_img_wrap img { margin-top: 20px; margin-left: 0; padding-right: 20px; padding-left: 40px; width: 100%; } }
+
+.works_2020_03 .works_info_wrap { margin-left: -520px; }
+
+@media (max-width: 736px) { .works_2020_03 .works_info_wrap { margin-left: 0; } }
+
 /* works e ================================================= */
 /* ---------------------------------------------------------- */
 /* ========================================================== */

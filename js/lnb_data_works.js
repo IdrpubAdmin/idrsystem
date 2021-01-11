@@ -19,6 +19,11 @@ var lnbInfoData = {
       txt: "2",
       url: "works_2020_02.html",
       state: ""
+    }, {
+      num: "lnb2_03",
+      txt: "3",
+      url: "works_2020_03.html",
+      state: ""
     }]
   }, {
     num: "lnb1_19",
