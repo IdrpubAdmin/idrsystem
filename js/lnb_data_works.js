@@ -107,12 +107,44 @@ var lnbInfoData = {
   }, {
     num: "lnb1_14",
     txt: "2014",
-    url: "javascript:forWroking();",
-    state: ""
+    url: "works_2014_01.html",
+    state: "",
+    lnb_d2: [{
+      num: "lnb2_01",
+      txt: "1",
+      url: "works_2014_01.html",
+      state: ""
+    }, {
+      num: "lnb2_02",
+      txt: "2",
+      url: "works_2014_02.html",
+      state: ""
+    }, {
+      num: "lnb2_03",
+      txt: "3",
+      url: "works_2014_03.html",
+      state: ""
+    }]
   }, {
     num: "lnb1_13",
     txt: "2013",
-    url: "javascript:forWroking();",
-    state: ""
+    url: "works_2013_01.html",
+    state: "",
+    lnb_d2: [{
+      num: "lnb2_01",
+      txt: "1",
+      url: "works_2013_01.html",
+      state: ""
+    }, {
+      num: "lnb2_02_1",
+      txt: "2",
+      url: "works_2013_02_01.html",
+      state: ""
+    }, {
+      num: "lnb2_02_2",
+      txt: "2",
+      url: "works_2013_02_02.html",
+      state: ""
+    }]
   }]
 };

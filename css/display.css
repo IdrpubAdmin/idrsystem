@@ -475,6 +475,34 @@
   .works_box .works_info_wrap .wif_subject { font-size: 28px; }
   .works_box .works_info_wrap .wif_detail { margin-top: 50px; } }
 
+.works_2013_01 .works_img_wrap img { margin-top: 360px; margin-bottom: 268px; margin-left: 782px; width: 770px; }
+
+@media (max-width: 736px) { .works_2013_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 10px 20px; width: 100%; } }
+
+.works_2014_01 .works_img_wrap img { margin-top: 240px; margin-bottom: 320px; margin-left: 720px; width: 929px; }
+
+@media (max-width: 736px) { .works_2014_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; } }
+
+.works_2014_02 .works_img_wrap img { margin-top: 240px; margin-bottom: 254px; margin-left: 640px; width: 594px; }
+
+@media (max-width: 736px) { .works_2014_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; } }
+
+.works_2014_03 .works_img_wrap img { width: 379px; }
+
+@media (max-width: 736px) { .works_2014_03 .works_img_wrap img { width: 100%; } }
+
+.works_2014_03 .works_img_wrap .img_box { display: flex; flex-wrap: wrap; align-items: center; flex-direction: column; margin: 430px 0px 390px 915px; }
+
+.works_2014_03 .works_img_wrap .img_box .text_box { color: #044CA3; }
+
+.works_2014_03 .works_img_wrap .img_box .text_box .title { margin: 82px 0 50px; font-size: 3em; text-align: center; line-height: 40px; }
+
+.works_2014_03 .works_img_wrap .img_box .text_box .sub_title { margin-left: 70px; font-size: 1.6em; text-align: left; line-height: 26px; }
+
+@media (max-width: 736px) { .works_2014_03 .works_img_wrap .img_box { margin: 0; padding: 0 20px; }
+  .works_2014_03 .works_img_wrap .img_box .text_box .title { margin: 50px 0 30px; font-size: 28px; }
+  .works_2014_03 .works_img_wrap .img_box .text_box .sub_title { margin-left: 0px; font-size: 1.5em; } }
+
 .works_2015_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 120px; margin-left: 640px; width: 850px; }
 
 @media (max-width: 736px) { .works_2015_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
