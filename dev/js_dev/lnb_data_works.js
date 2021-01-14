@@ -48,8 +48,8 @@ const lnbInfoData = {
         { num:"lnb1_13", txt:"2013", url:"works_2013_01.html", state:"",
             lnb_d2:[
                 {num:"lnb2_01", txt:"1", url:"works_2013_01.html", state:""},
-                {num:"lnb2_02_1", txt:"2", url:"works_2013_02_01.html", state:""},
-                {num:"lnb2_02_2", txt:"2", url:"works_2013_02_02.html", state:""},
+                {num:"lnb2_02", txt:"2", url:"works_2013_02_01.html", state:""},
+                {num:"lnb2_02", txt:"", url:"works_2013_02_02.html", state:""},
             ]
         }
     ]

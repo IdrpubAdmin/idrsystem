@@ -136,13 +136,13 @@ var lnbInfoData = {
       url: "works_2013_01.html",
       state: ""
     }, {
-      num: "lnb2_02_1",
+      num: "lnb2_02",
       txt: "2",
       url: "works_2013_02_01.html",
       state: ""
     }, {
-      num: "lnb2_02_2",
-      txt: "2",
+      num: "lnb2_02",
+      txt: "",
       url: "works_2013_02_02.html",
       state: ""
     }]
