@@ -479,13 +479,19 @@
 
 @media (max-width: 736px) { .works_2013_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 10px 20px; width: 100%; } }
 
+@media (max-width: 736px) { .works_2013_01 .works_info_wrap { top: 0; left: 0; margin-left: 0; } }
+
 .works_2014_01 .works_img_wrap img { margin-top: 240px; margin-bottom: 320px; margin-left: 720px; width: 929px; }
 
 @media (max-width: 736px) { .works_2014_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; } }
 
+@media (max-width: 736px) { .works_2014_01 .works_info_wrap { top: 0; left: 0; margin-left: 0; } }
+
 .works_2014_02 .works_img_wrap img { margin-top: 240px; margin-bottom: 254px; margin-left: 640px; width: 594px; }
 
 @media (max-width: 736px) { .works_2014_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; } }
+
+@media (max-width: 736px) { .works_2014_02 .works_info_wrap { top: 0; left: 0; margin-left: 0; } }
 
 .works_2014_03 .works_img_wrap img { width: 379px; }
 
@@ -499,9 +505,11 @@
 
 .works_2014_03 .works_img_wrap .img_box .text_box .sub_title { margin-left: 70px; font-size: 1.6em; text-align: left; line-height: 26px; }
 
-@media (max-width: 736px) { .works_2014_03 .works_img_wrap .img_box { display: block; margin: 0; padding: 0 20px; }
+@media (max-width: 736px) { .works_2014_03 .works_img_wrap .img_box { display: block; margin: 0; padding: 20px 20px; }
   .works_2014_03 .works_img_wrap .img_box .text_box .title { margin: 50px 0 30px; font-size: 28px; }
   .works_2014_03 .works_img_wrap .img_box .text_box .sub_title { margin-left: 0px; font-size: 1.5em; } }
+
+@media (max-width: 736px) { .works_2014_03 .works_info_wrap { top: 0; left: 0; margin-left: 0; } }
 
 .works_2015_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 120px; margin-left: 640px; width: 850px; }
 
@@ -601,11 +609,11 @@
 
 .works_card .container .link_btn span { position: absolute; top: -58px; right: 40px; border-bottom: 1px solid #969696; font-weight: 300; font-size: 2em; letter-spacing: -2px; }
 
-.works_card .container .link_btn span:after { content: url(../images/common/arrow_r_b.png); position: absolute; top: -1px; right: -31px; width: 13px; height: 25px; }
+.works_card .container .link_btn span::after { content: url(../images/common/arrow_r_b.png); position: absolute; top: -1px; right: -31px; width: 13px; height: 25px; }
 
 .works_card .container .before span { top: -58px; right: 0; }
 
-.works_card .container .before span:after { content: url(../images/common/arrow_l_b.png); top: -2px; left: -31px; }
+.works_card .container .before span::after { content: url(../images/common/arrow_l_b.png); top: -2px; left: -31px; }
 
 .works_card .container .card_wrap { display: flex; }
 
@@ -617,21 +625,23 @@
 
 .works_card .container .card_wrap .item ul .title { margin-bottom: 15px; font-size: 1.5em; letter-spacing: -0px; }
 
-@media (max-width: 736px) { .works_card .container .card_wrap .item { max-width: 100%; } }
+@media (max-width: 736px) { .works_card .container .card_wrap .item { max-width: 100%; min-height: 0; } }
 
 .works_card .container .card_wrap .link_card { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 175px; color: #ffffff; }
 
 .works_card .container .card_wrap .link_card p { position: relative; margin-left: -40px; font-weight: 400; font-size: 1.9em; color: #ffffff; }
 
-.works_card .container .card_wrap .link_card p:after { content: url(../images/common/arrow_r_w.png); position: absolute; top: -18px; right: -63px; width: 31px; height: 61px; }
+.works_card .container .card_wrap .link_card p::after { content: url(../images/common/arrow_r_w.png); position: absolute; top: -18px; right: -63px; width: 31px; height: 61px; }
+
+@media (max-width: 736px) { .works_card .container .card_wrap .link_card { height: 175px; } }
 
 .works_card .container .card_wrap .before p { margin-right: -40px; }
 
-.works_card .container .card_wrap .before p:after { content: url(../images/common/arrow_l_w.png); left: -63px; }
+.works_card .container .card_wrap .before p::after { content: url(../images/common/arrow_l_w.png); left: -63px; }
 
 @media (max-width: 736px) { .works_card .container .card_wrap { display: block; } }
 
-@media (max-width: 736px) { .works_card { margin: unset; padding-left: 20px; padding-right: 20px; } }
+@media (max-width: 736px) { .works_card { margin: 0; padding-left: 20px; padding-right: 20px; } }
 
 .color0 { background-color: #000000; }
 

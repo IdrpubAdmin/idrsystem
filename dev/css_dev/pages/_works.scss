@@ -102,6 +102,13 @@
       }
     }
   }
+  @include mdq_m{
+    .works_info_wrap {
+      top:0;
+      left: 0;
+      margin-left: 0;
+    }
+  }
 }
 .works_2014_01 {
   .works_img_wrap {
@@ -121,6 +128,13 @@
       }
     }
   }
+  @include mdq_m{
+   .works_info_wrap {
+      top:0;
+      left: 0;
+      margin-left: 0;
+   }
+  }
 }
 .works_2014_02 {
   .works_img_wrap {
@@ -138,6 +152,13 @@
         padding: 20px 20px 0;
         width:100%;
       }
+    }
+  }
+  @include mdq_m{
+    .works_info_wrap {
+      top:0;
+      left: 0;
+      margin-left: 0;
     }
   }
 }
@@ -177,7 +198,7 @@
       .img_box {
         display: block;
         margin: 0;
-        padding: 0 20px;
+        padding: 20px 20px;
         .text_box {
           .title{
             margin: 50px 0 30px;
@@ -189,6 +210,13 @@
           }
         }
       }
+    }
+  }
+  @include mdq_m{
+    .works_info_wrap {
+      top:0;
+      left: 0;
+      margin-left: 0;
     }
   }
 }
@@ -551,7 +579,7 @@
         font-size: 2em;
         letter-spacing: -2px;
       }
-      span:after{
+      span::after{
         content: url(#{$img_url}common/arrow_r_b.png);
         position: absolute;
         top: -1px;
@@ -565,7 +593,7 @@
         top: -58px;
         right: 0;
       }
-      span:after {
+      span::after {
         content: url(#{$img_url}common/arrow_l_b.png);
         top: -2px;
         left: -31px;
@@ -598,6 +626,7 @@
       @include mdq_m {
         .item {
           max-width: 100%;
+          min-height: 0;
         }
       }
       .link_card {
@@ -614,7 +643,7 @@
           font-size: 1.9em;
           color: #ffffff;
         }
-        p:after{
+        p::after{
             content: url(#{$img_url}common/arrow_r_w.png);
             position: absolute;
             top: -18px;
@@ -623,11 +652,16 @@
             height: 61px;
         }
       }
+      @include mdq_m{
+        .link_card{
+          height: 175px;
+        }
+      }
       .before {
         p {
           margin-right: -40px;
         }
-        p:after{
+        p::after{
           content: url(#{$img_url}common/arrow_l_w.png);
           left: -63px;
         }
@@ -642,7 +676,7 @@
 }
 @include mdq_m {
   .works_card {
-    margin: unset;
+    margin: 0;
     padding-left: 20px;
     padding-right: 20px;
   }
