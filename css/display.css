@@ -617,7 +617,7 @@
 
 .works_card .container .card_wrap { display: flex; }
 
-.works_card .container .card_wrap .item { flex: 1; max-width: 319px; min-height: 190px; margin-right: 0.1em; margin-bottom: 0.1em; }
+.works_card .container .card_wrap .item { flex: 1; max-width: 320px; min-height: 190px; margin-right: 0.1em; margin-bottom: 0.1em; }
 
 .works_card .container .card_wrap .item ul { padding: 35px 3px 30px 35px; }
 
