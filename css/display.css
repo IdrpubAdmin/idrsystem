@@ -471,27 +471,25 @@
 
 .works_box .works_info_wrap .wif_detail .wifd_con li:before { content: '-'; display: inline-block; width: 10px; height: 10px; position: absolute; top: 0; left: 0; }
 
-@media (max-width: 736px) { .works_box .works_info_wrap { position: relative; top: unset; left: unset; margin-left: unset; padding-top: 30px; padding-right: 15px; padding-left: 15px; }
+@media (max-width: 736px) { .works_box .works_info_wrap { position: relative; top: 0px; left: 0px; margin-left: 0px; padding-top: 30px; padding-left: 20px; padding-right: 20px; }
   .works_box .works_info_wrap .wif_subject { font-size: 28px; }
   .works_box .works_info_wrap .wif_detail { margin-top: 50px; } }
 
 .works_2013_01 .works_img_wrap img { margin-top: 360px; margin-bottom: 268px; margin-left: 782px; width: 770px; }
 
-@media (max-width: 736px) { .works_2013_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 10px 20px; width: 100%; } }
-
-@media (max-width: 736px) { .works_2013_01 .works_info_wrap { top: 0; left: 0; margin-left: 0; } }
+@media (max-width: 736px) { .works_2013_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 10px 20px; width: 100%; height: 100%; } }
 
 .works_2014_01 .works_img_wrap img { margin-top: 240px; margin-bottom: 320px; margin-left: 720px; width: 929px; }
 
-@media (max-width: 736px) { .works_2014_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; } }
-
-@media (max-width: 736px) { .works_2014_01 .works_info_wrap { top: 0; left: 0; margin-left: 0; } }
+@media (max-width: 736px) { .works_2014_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; height: 100%; } }
 
 .works_2014_02 .works_img_wrap img { margin-top: 240px; margin-bottom: 254px; margin-left: 640px; width: 594px; }
 
-@media (max-width: 736px) { .works_2014_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; } }
+@media (max-width: 736px) { .works_2014_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding: 20px 20px 0; width: 100%; height: 100%; } }
 
-@media (max-width: 736px) { .works_2014_02 .works_info_wrap { top: 0; left: 0; margin-left: 0; } }
+.works_2014_02 .works_info_wrap .wif_detail { margin-top: 28px; }
+
+.works_2014_02 .works_info_wrap .wif_detail .wifd_tit { line-height: 24px; }
 
 .works_2014_03 .works_img_wrap img { width: 379px; }
 
@@ -513,69 +511,71 @@
 
 .works_2015_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 120px; margin-left: 640px; width: 850px; }
 
-@media (max-width: 736px) { .works_2015_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2015_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2015_02 .works_img_wrap img { margin-top: 190px; margin-bottom: 210px; margin-left: 840px; width: 926px; }
 
-@media (max-width: 736px) { .works_2015_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2015_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2015_03 #contents { padding-bottom: 0 !important; }
 
 .works_2015_03 .works_img_wrap img { margin-top: 0; margin-left: auto; width: 960px; }
 
-@media (max-width: 736px) { .works_2015_03 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2015_03 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2016_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 140px; margin-left: 740px; width: 503px; }
 
-@media (max-width: 736px) { .works_2016_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2016_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-top: 20px; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2016_02 .works_img_wrap img { margin-top: 170px; margin-bottom: 35px; margin-left: 740px; width: 679px; }
 
-@media (max-width: 736px) { .works_2016_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2016_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2016_03 .works_img_wrap img { margin-top: 170px; margin-bottom: 45px; margin-left: 740px; width: 864px; }
 
-@media (max-width: 736px) { .works_2016_03 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2016_03 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
+
+@media (max-width: 736px) { .works_2016_03 .works_info_wrap { padding-right: 10px; } }
 
 .works_2017_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 100px; margin-left: 640px; width: 374px; }
 
-@media (max-width: 736px) { .works_2017_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2017_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2017_02 .works_img_wrap img { margin-top: 260px; margin-bottom: 180px; margin-left: 840px; width: 711px; }
 
-@media (max-width: 736px) { .works_2017_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2017_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
-/* 21.01.04 추가 */
-.works_2018_01 .works_img_wrap img { margin-top: 260px; margin-bottom: 100px; margin-left: 640px; width: 374px; }
-
-@media (max-width: 736px) { .works_2018_01 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
-
+/* 21.01.04 추가 - 디자인 완료 후 작업 예정 */
 .works_2019_01 #contents { padding-bottom: 0 !important; }
 
 .works_2019_01 .works_img_wrap img { margin-top: 160px; margin-left: 640px; width: 869px; }
 
-@media (max-width: 736px) { .works_2019_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2019_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
+
+@media (max-width: 736px) { .works_2019_01 .works_info_wrap { padding-right: 10px; } }
 
 .works_2019_02 #contents { padding-bottom: 0 !important; }
 
 @media (max-width: 736px) { .works_2019_02 #contents { padding-bottom: 80px !important; } }
 
-@media (max-width: 736px) { .works_2019_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2019_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2019_03 .works_img_wrap img { margin-top: 160px; margin-bottom: 120px; margin-left: 640px; width: 1087px; }
 
-@media (max-width: 736px) { .works_2019_03 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-right: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2019_03 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-top: 20px; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2020_01 .works_img_wrap { background: url(../images/works/glyde/works_img_bg.png) no-repeat; background-size: 1920px; background-position: 50% 0; }
 
 .works_2020_01 .works_img_wrap img { margin-top: 80px; margin-left: 640px; width: 251px; }
 
 @media (max-width: 736px) { .works_2020_01 .works_img_wrap { background: none; }
-  .works_2020_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-right: 20px; padding-left: 20px; width: 100%; } }
+  .works_2020_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
 .works_2020_02 .works_img_wrap img { margin-top: 18px; margin-left: 640px; width: 1035px; }
 
-@media (max-width: 736px) { .works_2020_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; width: 100%; } }
+@media (max-width: 736px) { .works_2020_02 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-left: 20px; padding-right: 10px; width: 100%; height: 100%; } }
+
+@media (max-width: 736px) { .works_2020_02 .works_info_wrap { padding-right: 10px; } }
 
 .works_2020_03 #contents { padding-bottom: 0 !important; }
 
@@ -583,15 +583,15 @@
 
 .works_2020_03 .works_box { height: 100vh; background: url(../images/works/hyundai_greating/works_img_bg.png) no-repeat; background-size: cover; }
 
-@media (max-width: 736px) { .works_2020_03 .works_box { height: unset; background: none; } }
+@media (max-width: 736px) { .works_2020_03 .works_box { height: 100%; background: none; } }
 
 .works_2020_03 .works_img_wrap img { margin-top: 220px; margin-left: 640px; width: 340px; }
 
-@media (max-width: 736px) { .works_2020_03 .works_img_wrap img { margin-top: 20px; margin-left: 0; padding-right: 20px; padding-left: 40px; width: 100%; } }
+@media (max-width: 736px) { .works_2020_03 .works_img_wrap img { margin-top: 20px; margin-left: 0; padding-right: 20px; padding-left: 20px; width: 100%; height: 100%; } }
 
 .works_2020_03 .works_info_wrap { margin-left: -520px; }
 
-@media (max-width: 736px) { .works_2020_03 .works_info_wrap { margin-left: 0; } }
+@media (max-width: 736px) { .works_2020_03 .works_info_wrap { margin-left: 0; padding-right: 10px; } }
 
 .works_card { max-width: 1280px; margin: 200px auto; }
 
