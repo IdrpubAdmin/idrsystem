@@ -47,6 +47,17 @@ var lnbInfoData = {
       state: ""
     }]
   }, {
+    num: "lnb1_18",
+    txt: "2018",
+    url: "works_2018_01.html",
+    state: "",
+    lnb_d2: [{
+      num: "lnb2_01",
+      txt: "1",
+      url: "works_2018_01.html",
+      state: ""
+    }]
+  }, {
     num: "lnb1_17",
     txt: "2017",
     url: "works_2017_01.html",

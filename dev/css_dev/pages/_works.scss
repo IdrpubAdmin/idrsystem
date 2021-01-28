@@ -392,26 +392,46 @@
     }
   }
 }
-/* 21.01.04 추가 - 디자인 완료 후 작업 예정 */
-//.works_2018_01 {
-//  .works_img_wrap {
-//    img {
-//      margin-top:260px;
-//      margin-bottom:100px;
-//      margin-left:640px;
-//      width:374px;
-//    }
-//    @include mdq_m {
-//      img {
-//        margin-top:0;
-//        margin-bottom:0;
-//        margin-left:0;
-//        padding-right:20px;
-//        width:100%;
-//      }
-//    }
-//  }
-//}
+.works_2018_01 {
+  #contents {
+    padding-bottom:0 !important;
+    @include mdq_m {
+      padding-bottom:80px !important;
+    }
+  }
+  .works_box {
+    height:100vh;
+    background:url(#{$img_url}works/thehandsome/works_img_bg.png) no-repeat;
+    background-size:cover;
+    @include mdq_m {
+      height: 100%;
+      background:none;
+    }
+  }
+  .works_img_wrap {
+    img {
+      margin-top:24%;
+      margin-left:22%;
+      width:52%;
+    }
+    @include mdq_m {
+      img {
+        margin-top:20px;
+        margin-left:0;
+        padding-right:20px;
+        width:100%;
+        height: 100%;
+      }
+    }
+  }
+  .works_info_wrap {
+    margin-left:-520px;
+    @include mdq_m {
+      margin-left:0;
+      padding-right: 10px;
+    }
+  }
+}
 
 .works_2019_01 {
   #contents {

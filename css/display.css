@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ========================================================== */
 /*                                                            */
 /* file		: button                                       	  */
@@ -545,7 +544,22 @@
 
 @media (max-width: 736px) { .works_2017_02 .works_img_wrap img { margin-top: 0; margin-bottom: 0; margin-left: 0; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
 
-/* 21.01.04 추가 - 디자인 완료 후 작업 예정 */
+.works_2018_01 #contents { padding-bottom: 0 !important; }
+
+@media (max-width: 736px) { .works_2018_01 #contents { padding-bottom: 80px !important; } }
+
+.works_2018_01 .works_box { height: 100vh; background: url(../images/works/thehandsome/works_img_bg.png) no-repeat; background-size: cover; }
+
+@media (max-width: 736px) { .works_2018_01 .works_box { height: 100%; background: none; } }
+
+.works_2018_01 .works_img_wrap img { margin-top: 24%; margin-left: 22%; width: 52%; }
+
+@media (max-width: 736px) { .works_2018_01 .works_img_wrap img { margin-top: 20px; margin-left: 0; padding-right: 20px; width: 100%; height: 100%; } }
+
+.works_2018_01 .works_info_wrap { margin-left: -520px; }
+
+@media (max-width: 736px) { .works_2018_01 .works_info_wrap { margin-left: 0; padding-right: 10px; } }
+
 .works_2019_01 #contents { padding-bottom: 0 !important; }
 
 .works_2019_01 .works_img_wrap img { margin-top: 160px; margin-left: 640px; width: 869px; }
