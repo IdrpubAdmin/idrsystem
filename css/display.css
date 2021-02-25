@@ -393,7 +393,9 @@
 
 @media (max-width: 736px) { .portfolio_box ul > li { width: 50%; } }
 
-.portfolio_box ul > li a .ptfl_item { position: relative; width: 100%; }
+.portfolio_box ul > li a .ptfl_item { position: relative; width: 100%; height: 100%; }
+
+.portfolio_box ul > li a .ptfl_item img { height: 100%; }
 
 .portfolio_box ul > li a .ptfl_item .ptfl_info { display: flex; position: absolute; top: 0; left: 0; padding: 42px 32px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.74); align-content: flex-start; flex-wrap: wrap; opacity: 0; transition: opacity 0.6s; }
 
