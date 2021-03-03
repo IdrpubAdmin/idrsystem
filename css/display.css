@@ -320,7 +320,7 @@
 
 @media (max-width: 736px) { .biz_box .sec_tit { top: 20px; left: 24px; } }
 
-.biz_box .biz_item { padding-top: 470px; text-align: right; }
+.biz_box .biz_item { padding-top: 490px; text-align: right; }
 
 .biz_box .biz_item .visual_img { position: absolute; top: 0; right: 0; display: inline-block; width: auto; }
 
@@ -330,7 +330,7 @@
 
 .biz_box .biz_item .desc_box p { display: inline-block; max-width: 500px; margin-left: 56px; text-align: left; }
 
-@media (max-width: 736px) { .biz_box .biz_item { position: relative; margin-top: 200px; padding-top: 240px; padding-right: 15px; padding-left: 15px; }
+@media (max-width: 736px) { .biz_box .biz_item { position: relative; margin-top: 160px; padding-top: 240px; padding-right: 15px; padding-left: 15px; }
   .biz_box .biz_item .sub_tit { margin-bottom: 25px; font-size: 2.4em !important; line-height: 27px !important; }
   .biz_box .biz_item .sub_tit span { font-size: 24px !important; line-height: 24px !important; } }
 
@@ -344,7 +344,7 @@
 
 .biz_box .biz_item_03 .desc_box { margin-bottom: 75px; }
 
-.biz_box .swiper-container { width: 100%; }
+.biz_box .swiper-container { width: 100%; padding-top: 80px; }
 
 .biz_box div.swiper-pagination { top: 240px; bottom: unset; }
 

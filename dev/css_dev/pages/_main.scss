@@ -36,7 +36,8 @@
     }
   }
   .biz_item {
-    padding-top:470px;
+    //padding-top:470px;
+    padding-top:490px;
     text-align:right;
     .visual_img {
       @include posa_tr();
@@ -58,7 +59,9 @@
     }
     @include mdq_m {
       position:relative;
-      margin-top:200px;
+      //margin-top:200px;
+      //padding-top:240px;
+      margin-top:160px;
       padding-top:240px;
       @include setDfPadding();
       .sub_tit {
@@ -101,6 +104,7 @@
   }
   .swiper-container {
     width: 100%;
+    padding-top:80px;
   }
   div.swiper-pagination {
     top:240px;
