@@ -5,6 +5,17 @@
  */
 var lnbInfoData = {
   lnb_d1: [{
+    num: "lnb1_21",
+    txt: "2021",
+    url: "works_2021_01.html",
+    state: "",
+    lnb_d2: [{
+      num: "lnb2_01",
+      txt: "1",
+      url: "works_2021_01.html",
+      state: ""
+    }]
+  }, {
     num: "lnb1_20",
     txt: "2020",
     url: "works_2020_01.html",

@@ -681,6 +681,16 @@
 
 .color10 { background-color: #89ADDB; }
 
+.works_2021_01 { background: #ffdd23; }
+
+.works_2021_01 #contents { padding-bottom: 0 !important; }
+
+@media (max-width: 736px) { .works_2021_01 #contents { padding-bottom: 80px !important; } }
+
+.works_2021_01 .works_img_wrap img { margin-top: 150px; margin-left: 370px; width: 1065px; }
+
+@media (max-width: 736px) { .works_2021_01 .works_img_wrap img { margin-top: 0; margin-left: 0; padding-top: 20px; padding-left: 20px; padding-right: 20px; width: 100%; height: 100%; } }
+
 /* works e ================================================= */
 /* ---------------------------------------------------------- */
 /* ========================================================== */
