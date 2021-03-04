@@ -2285,14 +2285,14 @@ img { width: 100%; }
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
 /* header s ================================================= */
-#header { padding-top: 75px; padding-left: 20px; padding-bottom: 20px; position: fixed; top: 0; left: 0; width: 100%; text-align: center; z-index: 10; -webkit-transition: padding-top, 0.4s; -khtml-transition: padding-top, 0.4s; -moz-transition: padding-top, 0.4s; -ms-transition: padding-top, 0.4s; -o-transition: padding-top, 0.4s; transition: padding-top, 0.4s; }
+#header { padding-top: 58px; padding-left: 20px; padding-bottom: 20px; position: fixed; top: 0; left: 0; width: 100%; min-height: 80px; text-align: center; z-index: 10; -webkit-transition: padding-top, 0.4s; -khtml-transition: padding-top, 0.4s; -moz-transition: padding-top, 0.4s; -ms-transition: padding-top, 0.4s; -o-transition: padding-top, 0.4s; transition: padding-top, 0.4s; }
 
 @media (max-width: 736px) { #header { padding-top: 20px; height: 70px; background: #fff; }
   #header .header_logo, #header .gnb_btn { top: 20px; } }
 
 #header.fixed { padding-top: 20px; }
 
-@media (max-width: 1520px) { #header.fixed { padding-top: 55px; background: #fff; } }
+@media (max-width: 1520px) { #header.fixed { background: #fff; } }
 
 #header.fixed .header_logo, #header.fixed .gnb_btn { top: 20px; }
 
@@ -2304,11 +2304,11 @@ img { width: 100%; }
 
 .has_wnd_nav #header.fixed { background: #fff; }
 
-.header_logo { position: absolute; top: 75px; left: 20px; -webkit-transition: top, 0.4s; -khtml-transition: top, 0.4s; -moz-transition: top, 0.4s; -ms-transition: top, 0.4s; -o-transition: top, 0.4s; transition: top, 0.4s; display: inline-block; width: 103px; cursor: pointer; }
+.header_logo { position: absolute; top: 58px; left: 20px; -webkit-transition: top, 0.4s; -khtml-transition: top, 0.4s; -moz-transition: top, 0.4s; -ms-transition: top, 0.4s; -o-transition: top, 0.4s; transition: top, 0.4s; display: inline-block; width: 103px; cursor: pointer; }
 
 @media (max-width: 736px) { .header_logo { width: 80px; } }
 
-.gnb_btn { position: absolute; top: 75px; right: 20px; -webkit-transition: top, 0.4s; -khtml-transition: top, 0.4s; -moz-transition: top, 0.4s; -ms-transition: top, 0.4s; -o-transition: top, 0.4s; transition: top, 0.4s; width: 46px; height: 34px; cursor: pointer; }
+.gnb_btn { position: absolute; top: 58px; right: 20px; -webkit-transition: top, 0.4s; -khtml-transition: top, 0.4s; -moz-transition: top, 0.4s; -ms-transition: top, 0.4s; -o-transition: top, 0.4s; transition: top, 0.4s; width: 46px; height: 34px; cursor: pointer; }
 
 .gnb_btn, .gnb_btn .line { display: inline-block; -webkit-transition: all 0.4s; -khtml-transition: all 0.4s; -moz-transition: all 0.4s; -ms-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; }
 

@@ -10,7 +10,8 @@
 /* ---------------------------------------------------------- */
 /* header s ================================================= */
 $header_padding:20px;
-$header_padding-top:75px;
+//$header_padding-top:75px;
+$header_padding-top:58px;
 $header_padding-top2:20px;
 $header_motion_time:0.4s;
 #header {
@@ -19,7 +20,7 @@ $header_motion_time:0.4s;
   padding-bottom:20px;
   @include posft();
   width:100%;
-
+  min-height:80px;
   text-align:center;
   z-index:10;
   @include transition(padding-top, $header_motion_time);
@@ -35,7 +36,6 @@ $header_motion_time:0.4s;
   &.fixed {
     padding-top:$header_padding-top2;
     @include mdq_custom {
-      padding-top:55px;
       background:#fff;
     }
     .header_logo,

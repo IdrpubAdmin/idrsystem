@@ -757,6 +757,12 @@
 
 .works_2021_01 {
   background:#ffdd23;
+  &.has_wnd_nav {
+    #header,
+    #header.fixed {
+      background:#ffdd23 !important;
+    }
+  }
   #contents {
     padding-bottom:0 !important;
     @include mdq_m {

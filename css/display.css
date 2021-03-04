@@ -683,6 +683,8 @@
 
 .works_2021_01 { background: #ffdd23; }
 
+.works_2021_01.has_wnd_nav #header, .works_2021_01.has_wnd_nav #header.fixed { background: #ffdd23 !important; }
+
 .works_2021_01 #contents { padding-bottom: 0 !important; }
 
 @media (max-width: 736px) { .works_2021_01 #contents { padding-bottom: 80px !important; } }
