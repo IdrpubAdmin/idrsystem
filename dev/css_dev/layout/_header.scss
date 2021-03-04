@@ -35,6 +35,7 @@ $header_motion_time:0.4s;
   &.fixed {
     padding-top:$header_padding-top2;
     @include mdq_custom {
+      padding-top:55px;
       background:#fff;
     }
     .header_logo,

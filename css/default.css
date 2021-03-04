@@ -2292,7 +2292,7 @@ img { width: 100%; }
 
 #header.fixed { padding-top: 20px; }
 
-@media (max-width: 1520px) { #header.fixed { background: #fff; } }
+@media (max-width: 1520px) { #header.fixed { padding-top: 55px; background: #fff; } }
 
 #header.fixed .header_logo, #header.fixed .gnb_btn { top: 20px; }
 
